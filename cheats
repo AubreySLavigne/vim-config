@@ -9,6 +9,14 @@ ip == Act on 'inner paragraph'
 it == Act on 'inner tag'
 as == a sentence (what does this mean?)
 
+surround.vim:
+cs"' == change surrounding " to '
+cs'<body> == change surrounding ' to <body></body>
+cst' == change surrouding tags to '
+ds' == remove surrounding '
+ysiw' == surround current word with '
+yssb == surround current line with braces
+
 Notes: 
  - Install and Use `ctags`
  - Figure out how to use Vim's Autocompletion   
