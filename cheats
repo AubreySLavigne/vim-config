@@ -17,7 +17,7 @@ ds' == remove surrounding '
 ysiw' == surround current word with '
 yssb == surround current line with braces
 
-Notes: 
+Notes and Wishlist: 
  - Install and Use `ctags`
  - Figure out how to use Vim's Autocompletion   
    - ^x == search
@@ -25,4 +25,9 @@ Notes:
  - Handle Git Merges through Vim
  - Handle Git Actions through Vim
  - Run commands through Vim
+ - Codesniffer
+ - Mess detector
+ - goto keyword definition
+ - fuzzy file search
+ - Snippets
 
