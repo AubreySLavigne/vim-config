@@ -6,6 +6,7 @@ set shiftwidth=4
 set autoindent
 
 " Highlighting
+syntax on
 set hlsearch
 
 " Numbering
@@ -23,4 +24,7 @@ else
     colorscheme desert
 endif
 
+" Plugin Options
+execute pathogen#infect()
+filetype plugin indent on
 
