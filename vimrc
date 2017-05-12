@@ -12,7 +12,7 @@ set hlsearch
 " Numbering
 set nu
 
-" Command Line Comments
+" Status Line Comments
 set showcmd
 
 " Color Settings
