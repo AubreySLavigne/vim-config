@@ -1,9 +1,16 @@
 
-# Whitespace Options
+" Whitespace Options
 set tabstop=4
 set expandtab
 set shiftwidth=4
+set autoindent
 
-# Numbering
+" Highlighting
+set hlsearch
+
+" Numbering
 set nu
+
+" Command Line Comments
+set showcmd
 
