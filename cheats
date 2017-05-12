@@ -1,0 +1,20 @@
+
+Useful Commands: 
+* == Search for Current Word
+gi == resume inserting where you were last editing
+g; == return to last editing location (cycle through)
+
+Text Objects:
+ip == Act on 'inner paragraph'
+it == Act on 'inner tag'
+as == a sentence (what does this mean?)
+
+Notes: 
+ - Install and Use `ctags`
+ - Figure out how to use Vim's Autocompletion   
+   - ^x == search
+   - ^n == autocomplete
+ - Handle Git Merges through Vim
+ - Handle Git Actions through Vim
+ - Run commands through Vim
+
