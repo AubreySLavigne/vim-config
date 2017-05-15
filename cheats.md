@@ -19,10 +19,10 @@
  * `yssb` == surround current line with braces
 
 ## vim-indent-object:
- * `ai` == indent level and line above
- * `ii` == indent level without line above
- * `aI` == indent level with line above and below
- * `iI` == indent level without line above and below
+ * `ai` == indent level, plus line above
+ * `ii` == indent level only
+ * `aI` == indent level, plus line above and below
+ * `iI` == indent level only (same as `ii`)
 
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
