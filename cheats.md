@@ -50,4 +50,5 @@
  * TextObject separated by whitespace
  * TextObject separated by any bracket type
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
+ * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
 
