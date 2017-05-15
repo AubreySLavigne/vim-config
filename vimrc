@@ -16,15 +16,16 @@ set nu
 set showcmd
 
 
-
 " Color Settings
 set t_Co=256
+
 if filereadable("colors/colors/icansee.vim")
     colorscheme colors/icansee
 else
     echo "Error Loading Colorscheme (Is submodule loaded?) - Default to Desert"
     colorscheme desert
 endif
+
 
 " Plugin Options
 execute pathogen#infect()
