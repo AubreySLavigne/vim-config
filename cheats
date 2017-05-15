@@ -3,6 +3,7 @@ Useful Commands:
 * == Search for Current Word
 gi == resume inserting where you were last editing
 g; == return to last editing location (cycle through)
+^r^rs == insert the content of the 's' register
 
 Text Objects:
 ip == Act on 'inner paragraph'
@@ -16,6 +17,9 @@ cst' == change surrouding tags to '
 ds' == remove surrounding '
 ysiw' == surround current word with '
 yssb == surround current line with braces
+
+Macros:
+@s == Swap two elements in square brackets
 
 Notes and Wishlist: 
  - Install and Use `ctags`

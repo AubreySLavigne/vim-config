@@ -31,11 +31,19 @@ execute pathogen#infect()
 filetype plugin indent on
 
 
+""""""""""
+" Macros "
+""""""""""
+
+" Swap two elements in square brackets
+" [abc, def] => [def, abc]
+" Undefined behavior if not a tuple
+let @s='di[PT[d/,t]a, pT[dw'
 
 """"""""""""
 " Mappings "
 """"""""""""
 
-" - Load Cheat File with ,cheat
+" Load Cheat File with ,cheat
 nnoremap ,cheat :vs ~/.vim/cheats<CR>
 
