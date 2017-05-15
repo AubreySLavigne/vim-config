@@ -9,6 +9,7 @@
  * `ip` == Act on 'inner paragraph'
  * `it` == Act on 'inner tag'
  * `as` == a sentence (what does this mean?)
+ * `iW` == word (delimeted by whitespace, not other word breaks)
 
 ## surround.vim:
  * `cs"'` == change surrounding " to '
@@ -46,5 +47,6 @@
  * fuzzy file search
  * Snippets
  * Set different text color after column 80
- * vim-scripts/argtextobj.vim - Arguments as Text Objects
+ * TextObject separated by whitespace
+ * TextObject separated by any bracket type
 
