@@ -42,4 +42,5 @@
  * fuzzy file search
  * Snippets
  * Set different text color after column 80
+ * vim-scripts/argtextobj.vim - Arguments as Text Objects
 
