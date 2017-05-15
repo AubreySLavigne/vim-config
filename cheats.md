@@ -25,6 +25,7 @@
  * `iI` == indent level without line above and below
 
 ## Macros:
+ * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@s` == Swap two elements in square brackets
 
 ## Notes and Wishlist: 
