@@ -49,5 +49,5 @@ let @s='di[PT[d/,t]a, pT[dw'
 """"""""""""
 
 " Load Cheat File with ,cheat
-nnoremap ,cheat :vs ~/.vim/cheats<CR>
+nnoremap ,cheat :vs ~/.vim/cheats.md<CR>
 
