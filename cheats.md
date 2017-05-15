@@ -24,6 +24,10 @@
  * `aI` == indent level, plus line above and below
  * `iI` == indent level only (same as `ii`)
 
+## argtextobj.vim
+ * `aa` == argument including comma
+ * `ia` == argument only
+
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@s` == Swap two elements in square brackets
