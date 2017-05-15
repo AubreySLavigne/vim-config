@@ -49,4 +49,5 @@
  * Set different text color after column 80
  * TextObject separated by whitespace
  * TextObject separated by any bracket type
+ * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
 
