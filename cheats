@@ -21,8 +21,8 @@ yssb == surround current line with braces
 vim-indent-object:
 ai == indent level and line above
 ii == indent level without line above
-aL == indent level with line above and below
-iL == indent level without line above and below
+aI == indent level with line above and below
+iI == indent level without line above and below
 
 Macros:
 @s == Swap two elements in square brackets
