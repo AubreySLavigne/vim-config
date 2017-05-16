@@ -8,13 +8,19 @@ set autoindent
 " Highlighting
 syntax on
 set hlsearch
+set incsearch
 
 " Numbering
 set nu
 
 " Status Line Comments
 set showcmd
+set ruler
 
+" Don't create swp files
+set nobackup
+set nowritebackup
+set noswapfile
 
 " Color Settings
 set t_Co=256
@@ -50,4 +56,9 @@ let @s='di[PT[d/,t]a, pT[dw'
 
 " Load Cheat File with ,cheat
 nnoremap ,cheat :vs ~/.vim/cheats.md<CR>
+
+" Change `zz` to save and exit the file
+noremap zz :x<CR>
+vnoremap zz <C-C>:x<CR>
+inoremap zz <C-O>:x<CR>
 
