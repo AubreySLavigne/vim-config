@@ -4,6 +4,12 @@
  * `gi` == resume inserting where you were last editing
  * `g`; == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
+ * `:so %` == reload current file -- good for reloading vimrc changes
+
+## Folding:
+ * `zF` == create fold
+ * `zd` == delete fold at the cursor
+ * `:{range}fo` == create fold for range
 
 ## Text Objects:
  * `ip` == Act on 'inner paragraph'
