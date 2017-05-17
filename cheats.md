@@ -6,6 +6,16 @@
  * `^r^rs` == insert the content of the 's' register
  * `:so %` == reload current file -- good for reloading vimrc changes
 
+## Tabs:
+ * `:tabnew` == opens new tab
+ * `:0tabnew` == opens new tab in first slot
+ * `:$tabnew` == opens new tab in last slot
+ * `:tabclose` == closes current tab`
+ * `:+tabmove` == move tab to the right
+ * `:-tabmove` == move tab to the last
+ * `:tabn` == go to next tab
+ * `:tabp` == go to previous tab 
+
 ## Folding:
  * `zF` == create fold
  * `zd` == delete fold at the cursor
@@ -53,11 +63,8 @@
  * fuzzy file search
  * Snippets
  * Set different text color after column 80
- * TextObject separated by whitespace
  * TextObject separated by any bracket type
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
  * Look into file browser
- * Look into `tabnew` and see what might be avilable
-
 
