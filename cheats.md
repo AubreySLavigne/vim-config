@@ -49,6 +49,11 @@
  * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@s` == Swap two elements in square brackets
 
+## Mappings
+ * `,cheat` == Load up Cheat List in Vert Split
+ * `zz` == ([INV]-mode) Save and exit file
+ * `\p` == ([IN]-mode) Paste Yanked Text 
+
 ## Notes and Wishlist: 
  * Install and Use `ctags`
  * Figure out how to use Vim's Autocompletion   
