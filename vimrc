@@ -62,7 +62,3 @@ noremap zz :x<CR>
 vnoremap zz <C-C>:x<CR>
 inoremap zz <C-O>:x<CR>
 
-" Allow paste "of yanked text in" Insert Mode
-inoremap <Leader>p <ESC>pa
-nnoremap <Leader>p <ESC>pa
-

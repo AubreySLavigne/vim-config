@@ -5,6 +5,7 @@
  * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
  * `:so %` == reload current file -- good for reloading vimrc changes
+ * `^r0` (zero) == reload current file -- good for reloading vimrc changes
 
 ## Tabs:
  * `:tabnew` == opens new tab
@@ -52,7 +53,6 @@
 ## Mappings
  * `,cheat` == Load up Cheat List in Vert Split
  * `zz` == ([INV]-mode) Save and exit file
- * `\p` == ([IN]-mode) Paste Yanked Text 
 
 ## Notes and Wishlist: 
  * Install and Use `ctags`
