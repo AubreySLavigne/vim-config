@@ -2,7 +2,7 @@
 ## Useful Commands: 
  * `*` == Search for Current Word
  * `gi` == resume inserting where you were last editing
- * `g`; == return to last editing location (cycle through)
+ * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
  * `:so %` == reload current file -- good for reloading vimrc changes
 
@@ -47,7 +47,7 @@
 
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
- * `@s` == Swap two elements in square brackets
+ * `@s` == Swap two elements in braces
 
 ## Mappings
  * `,cheat` == Load up Cheat List in Vert Split
@@ -68,7 +68,6 @@
  * fuzzy file search
  * Snippets
  * Set different text color after column 80
- * TextObject separated by any bracket type
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
  * Look into file browser

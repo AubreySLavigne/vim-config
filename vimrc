@@ -45,10 +45,10 @@ filetype plugin indent on
 " Insert Author Tag
 let @a='iAubrey Lavigne'
 
-" Swap two elements in square brackets
-" [abc, def] => [def, abc]
+" Swap two elements in a tuple (any brace)
 " Undefined behavior if not a tuple
-let @s='di[PT[d/,t]a, pT[dw'
+" [abc, def] => [def, abc]
+let @s='yij?[[({]ldt,/[])}]i, p?[[({]ldw'
 
 """"""""""""
 " Mappings "
