@@ -16,3 +16,6 @@
 [submodule "bundle/vim-textobj-brace"]
 	path = bundle/vim-textobj-brace
 	url = https://github.com/Julian/vim-textobj-brace
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree

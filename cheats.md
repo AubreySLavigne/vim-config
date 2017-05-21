@@ -4,8 +4,8 @@
  * `gi` == resume inserting where you were last editing
  * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
- * `:so %` == reload current file -- good for reloading vimrc changes
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
+ * `gf` == go to file under cursor
 
 ## Tabs:
  * `:tabnew` == opens new tab
@@ -25,7 +25,6 @@
 ## Text Objects:
  * `ip` == Act on 'inner paragraph'
  * `it` == Act on 'inner tag'
- * `as` == a sentence (what does this mean?)
  * `iW` == word (delimeted by whitespace, not other word breaks)
 
 ## surround.vim:
@@ -33,7 +32,6 @@
  * `cs'<body>` == change surrounding ' to <body></body>
  * `cst'` == change surrouding tags to '
  * `ds'` == remove surrounding '
- * `ysiw'` == surround current word with '
  * `yssb` == surround current line with braces
 
 ## vim-indent-object:
@@ -45,6 +43,13 @@
 ## argtextobj.vim
  * `aa` == argument including comma
  * `ia` == argument only
+
+## NERDTree
+ * `:NERDTree` == Open File Browser
+ * `:Bookmark name` == create a bookmark called 'name'
+ * `B` (in NERDTree Window) == Opens Bookmarks
+ * `o` (in NERDTree) == Opens selected dir/file
+ * `cd` (in NERDTree) == Change current directory to selected file
 
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
@@ -70,5 +75,4 @@
  * Set different text color after column 80
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
- * Look into file browser
 
