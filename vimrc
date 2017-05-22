@@ -1,5 +1,6 @@
 
-" Whitespace Options
+" Encoding/Whitespace Options
+set encoding=utf-8
 set tabstop=4
 set expandtab
 set shiftwidth=4
@@ -28,12 +29,15 @@ set t_Co=256
 if filereadable("colors/colors/icansee.vim")
     colorscheme colors/icansee
 else
-    echo "Error Loading Colorscheme (Is submodule loaded?) - Default to Desert"
+    echo "Error Loading Colorscheme (Is submodule loaded?) - Default to Desert. "
     colorscheme desert
 endif
 
 
-" Plugin Options
+""""""""""""""""""
+" Plugin Options "
+""""""""""""""""""
+
 execute pathogen#infect()
 filetype plugin indent on
 
