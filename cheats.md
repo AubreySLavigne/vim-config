@@ -52,6 +52,10 @@
  * `o` (in NERDTree) == Opens selected dir/file
  * `cd` (in NERDTree) == Change current directory to selected file
 
+## vim-fugitive
+ * `:Gstatus` == `git status` 
+ * `:Glog` == `git log` for file in buffer
+
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@s` == Swap two elements in braces
@@ -65,8 +69,7 @@
  * Figure out how to use Vim's Autocompletion   
  *  `^x` == search
  *  `^n` == autocomplete
- * Handle Git Merges through Vim
- * Handle Git Actions through Vim
+ * Explore vim-fugitive.vim
  * Run commands through Vim
  * Codesniffer
  * Mess detector
