@@ -22,3 +22,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-textobj-space"]
+	path = bundle/vim-textobj-space
+	url = https://github.com/saihoooooooo/vim-textobj-space

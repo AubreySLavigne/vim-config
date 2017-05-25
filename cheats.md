@@ -56,8 +56,12 @@
  * `:Gstatus` == `git status` 
  * `:Glog` == `git log` for file in buffer
 
+## vim-textobj-space
+ * `iS` == any mixed spaces
+
 ## Macros:
  * `@a` == Insert Author Signature: Aubrey Lavigne
+ * `@r` == Paste currently yanked text and prepend
  * `@s` == Swap two elements in braces
 
 ## Mappings

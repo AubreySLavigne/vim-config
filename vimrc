@@ -54,6 +54,10 @@ let @a='iAubrey Lavigne'
 " [abc, def] => [def, abc]
 let @s='yijdt,/[])}]i, p?[[({]ldw'
 
+" Post the currently yanked word, and prepend to word
+let @r='viS"_c  PBi'
+
+
 """"""""""""
 " Mappings "
 """"""""""""
