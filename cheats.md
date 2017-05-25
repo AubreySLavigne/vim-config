@@ -61,7 +61,8 @@
  * `@s` == Swap two elements in braces
 
 ## Mappings
- * `,cheat` == Load up Cheat List in Vert Split
+ * `,ch` == Load up Cheat List 
+ * `,rc` == Load up vimrc
  * `zz` == ([INV]-mode) Save and exit file
 
 ## Notes and Wishlist: 
@@ -79,4 +80,9 @@
  * Set different text color after column 80
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
+ * Plugin called Command-T?
+
+## Tips:
+ * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
+ * Build fail safes for common typos (Intolerance of Typos)
 

@@ -52,14 +52,15 @@ let @a='iAubrey Lavigne'
 " Swap two elements in a tuple (any brace)
 " Undefined behavior if not a tuple
 " [abc, def] => [def, abc]
-let @s='yij?[[({]ldt,/[])}]i, p?[[({]ldw'
+let @s='yijdt,/[])}]i, p?[[({]ldw'
 
 """"""""""""
 " Mappings "
 """"""""""""
 
 " Load Cheat File with ,cheat
-nnoremap ,cheat :vs ~/.vim/cheats.md<CR>
+nnoremap ,ch :vs ~/.vim/cheats.md<CR>
+nnoremap ,rr :vs ~/.vim/vimrc<CR>
 
 " Change `zz` to save and exit the file
 noremap zz :x<CR>
