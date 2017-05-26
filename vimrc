@@ -62,12 +62,19 @@ let @r='viS"_c  PBi'
 " Mappings "
 """"""""""""
 
-" Load Cheat File with ,cheat
+" Load .vim/ files with shortcut
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
-nnoremap ,rr :vs ~/.vim/vimrc<CR>
+nnoremap ,rc :vs ~/.vim/vimrc<CR>
 
 " Change `zz` to save and exit the file
 noremap zz :x<CR>
 vnoremap zz <C-C>:x<CR>
 inoremap zz <C-O>:x<CR>
+
+noremap zx :q!<CR>
+vnoremap zx <C-C>:q!<CR>
+inoremap zx <C-O>:q!<CR>
+
+" Add Current File to Repo (git) and exit the file
+nnoremap ,ga :Gwrite<CR>:q!<CR>
 

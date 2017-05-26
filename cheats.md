@@ -67,6 +67,7 @@
 ## Mappings
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
+ * `,ga` == git add the current file, then exit
  * `zz` == ([INV]-mode) Save and exit file
 
 ## Notes and Wishlist: 
@@ -85,8 +86,11 @@
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
  * Plugin called Command-T?
+ * Read "Learning Vimscript the Hard Way"
+ * Watch videos on cvimcasts.org
 
 ## Tips:
  * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
  * Build fail safes for common typos (Intolerance of Typos)
+ * Make Macros reusable
 
