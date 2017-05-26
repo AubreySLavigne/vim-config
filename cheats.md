@@ -60,6 +60,7 @@
  * `iS` == any mixed spaces
 
 ## Macros:
+ `:2,10norm @p` == Run Macro over a range 
  * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@r` == Paste currently yanked text and prepend
  * `@s` == Swap two elements in braces
