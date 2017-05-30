@@ -64,6 +64,7 @@
  * `@a` == Insert Author Signature: Aubrey Lavigne
  * `@r` == Paste currently yanked text and prepend
  * `@s` == Swap two elements in braces
+ * `@t` == Convert Old Style Array to new Style
 
 ## Mappings
  * `,ch` == Load up Cheat List 

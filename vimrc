@@ -49,13 +49,16 @@ filetype plugin indent on
 " Insert Author Tag
 let @a='iAubrey Lavigne'
 
+" Post the currently yanked word, and prepend to word
+let @r='viS"_c  PBi'
+
 " Swap two elements in a tuple (any brace)
 " Undefined behavior if not a tuple
 " [abc, def] => [def, abc]
 let @s='yijdt,/[])}]i, p?[[({]ldw'
 
-" Post the currently yanked word, and prepend to word
-let @r='viS"_c  PBi'
+" Convert old style array (`array($val)`) to new style (`[$val]`)
+let @t='5h/arraydiwcs(['
 
 
 """"""""""""
