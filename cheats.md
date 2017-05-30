@@ -69,6 +69,7 @@
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
  * `,ga` == git add the current file, then exit
+ * `,ne` == Open NERDTree
  * `zz` == ([NV]-mode) Save and exit file
  * `zx` == ([NV]-mode) Exit File Without Saving
  * `za` == ([NV]-mode) Exit All Files Without Saving

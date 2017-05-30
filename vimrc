@@ -66,16 +66,21 @@ let @r='viS"_c  PBi'
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
 nnoremap ,rc :vs ~/.vim/vimrc<CR>
 
-" Change `zz` to save and exit the file
+" Save and Exit the File
 noremap zz :x<CR>
 vnoremap zz <C-C>:x<CR>
 
+" Exit without Saving
 noremap zx :q!<CR>
 vnoremap zx <C-C>:q!<CR>
 
+" Exit all Files
 noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
 
 " Add Current File to Repo (git) and exit the file
 nnoremap ,ga :Gwrite<CR>:q!<CR>
+
+" Open NERDTree
+nnoremap ,ne :NERDTree<CR>
 
