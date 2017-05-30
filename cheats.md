@@ -7,6 +7,7 @@
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `gf` == go to file under cursor
  * `^o` == return to the previous file/cursor location
+ * `J` and `K` == (V-mode) Move Selected Block Up and Down
 
 ## Tabs:
  * `:tabnew` == opens new tab
