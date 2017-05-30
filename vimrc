@@ -49,6 +49,9 @@ filetype plugin indent on
 " Insert Author Tag
 let @a='iAubrey Lavigne'
 
+" Break this line at column 80
+let @j='80|T i k$'
+
 " Post the currently yanked word, and prepend to word
 let @r='viS"_c  PBi'
 

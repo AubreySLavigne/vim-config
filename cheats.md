@@ -1,6 +1,5 @@
-
+Aubrey Lavigne
 ## Useful Commands: 
- * `*` == Search for Current Word
  * `gi` == resume inserting where you were last editing
  * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
@@ -63,6 +62,7 @@
 ## Macros:
  `:2,10norm @p` == Run Macro over a range 
  * `@a` == Insert Author Signature: Aubrey Lavigne
+ * `@j` == Break the currently line at column 80 (without breaking words)
  * `@r` == Paste currently yanked text and prepend
  * `@s` == Swap two elements in braces
  * `@t` == Convert Old Style Array to new Style
