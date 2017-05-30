@@ -69,7 +69,9 @@
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
  * `,ga` == git add the current file, then exit
- * `zz` == ([INV]-mode) Save and exit file
+ * `zz` == ([NV]-mode) Save and exit file
+ * `zx` == ([NV]-mode) Exit File Without Saving
+ * `za` == ([NV]-mode) Exit All Files Without Saving
 
 ## Notes and Wishlist: 
  * Install and Use `ctags`

@@ -69,11 +69,12 @@ nnoremap ,rc :vs ~/.vim/vimrc<CR>
 " Change `zz` to save and exit the file
 noremap zz :x<CR>
 vnoremap zz <C-C>:x<CR>
-inoremap zz <C-O>:x<CR>
 
 noremap zx :q!<CR>
 vnoremap zx <C-C>:q!<CR>
-inoremap zx <C-O>:q!<CR>
+
+noremap za :qa!<CR>
+vnoremap za <C-C>:qa!<CR>
 
 " Add Current File to Repo (git) and exit the file
 nnoremap ,ga :Gwrite<CR>:q!<CR>
