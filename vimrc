@@ -36,9 +36,9 @@ endif
 " Shell Configuration
 set shell=/bin/bash
 
-""""""""""""""""""
+"-----------------
 " Plugin Options "
-""""""""""""""""""
+"-----------------
 
 execute pathogen#infect('bundle/always/{}')
 autocmd FileType * if isdirectory('/home/martin/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
@@ -46,9 +46,9 @@ autocmd FileType * if isdirectory('/home/martin/.vim/bundle/' . &ft) | execute p
 " Turn NERDTree on, at startup
 let g:nerdtree_tabs_open_on_console_startup=1
 
-""""""""""""
+"-----------
 " Mappings "
-""""""""""""
+"-----------
 
 " Load .vim/ files with shortcut
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
@@ -112,9 +112,9 @@ nnoremap ,pb viS"_c  PBi
 " [abc, def] => [def, abc]
 nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
 
-""""""""""""""""""
+"-----------------
 " Quick Snippets "
-""""""""""""""""""
+"-----------------
 
 nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
 nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
