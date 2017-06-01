@@ -33,6 +33,8 @@ else
     colorscheme desert
 endif
 
+" Shell Configuration
+set shell=/bin/bash
 
 """"""""""""""""""
 " Plugin Options "
