@@ -98,3 +98,12 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " Phinx Shortcut
 nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
+
+" Change Modified Phinx File to up/down methods
+nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
+
+""""""""""""""""""
+" Quick Snippets "
+""""""""""""""""""
+
+nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w

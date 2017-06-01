@@ -1,4 +1,4 @@
-Aubrey Lavigne
+
 ## Useful Commands: 
  * `gi` == resume inserting where you were last editing
  * `g;` == return to last editing location (cycle through)
@@ -52,6 +52,7 @@ Aubrey Lavigne
  * `B` (in NERDTree Window) == Opens Bookmarks
  * `o` (in NERDTree) == Opens selected dir/file
  * `cd` (in NERDTree) == Change current directory to selected file
+ * `r` (in NERDTree) == Refresh Current Dir
 
 ## vim-fugitive
  * `:Gstatus` == `git status` 
@@ -79,14 +80,15 @@ Aubrey Lavigne
  * `za` == ([NV]-mode) Exit All Files Without Saving
 
 ## Notes and Wishlist: 
- * Install and Use `ctags`
+ * Find Better Alternatives to ctags
  * Figure out how to use Vim's Autocompletion   
  *  `^x` == search
  *  `^n` == autocomplete
- * Explore vim-fugitive.vim
  * Run commands through Vim
- * Codesniffer
- * Mess detector
+ * PHP Tools
+   * Codesniffer
+   * Mess detector
+   * PHP Documentor (https://github.com/tobyS/pdv)
  * goto keyword definition
  * fuzzy file search
  * Snippets
