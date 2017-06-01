@@ -7,6 +7,7 @@ Aubrey Lavigne
  * `gf` == go to file under cursor
  * `^o` == return to the previous file/cursor location
  * `J` and `K` == (V-mode) Move Selected Block Up and Down
+ * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
 
 ## Tabs:
  * `:tabnew` == opens new tab
@@ -72,6 +73,7 @@ Aubrey Lavigne
  * `,rc` == Load up vimrc
  * `,ga` == git add the current file, then exit
  * `,ne` == Open NERDTree
+ * `,phinx` == Load Incomplete Phinx Command
  * `zz` == ([NV]-mode) Save and exit file
  * `zx` == ([NV]-mode) Exit File Without Saving
  * `za` == ([NV]-mode) Exit All Files Without Saving

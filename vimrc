@@ -93,3 +93,6 @@ nnoremap ,ne :NERDTree<CR>
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+" Phinx Shortcut
+nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
