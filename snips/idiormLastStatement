@@ -1,0 +1,4 @@
+// \ORM::configure('logging',true);
+echo '<pre>';
+var_dump(\ORM::get_last_statement()->queryString);
+echo '</pre>';
