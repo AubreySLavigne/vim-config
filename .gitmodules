@@ -25,3 +25,6 @@
 [submodule "bundle/vim-textobj-space"]
 	path = bundle/vim-textobj-space
 	url = https://github.com/saihoooooooo/vim-textobj-space
+[submodule "bundle/vim-nerdtree-tabs"]
+	path = bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs

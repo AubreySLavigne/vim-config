@@ -55,6 +55,10 @@
  * `r` (in NERDTree) == Refresh Current Dir
  * `t` (in NERDTree) == Open selected file in new tab
 
+## NERDTree Tabs
+ * `:NERDTreeTabsOpen` == Switchs NERDTree on for all tabs
+ * `:NERDTreeTabsClose` == Switchs NERDTree off for all tabs
+
 ## vim-fugitive
  * `:Gstatus` == `git status` 
  * `:Glog` == `git log` for file in buffer

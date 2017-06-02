@@ -43,6 +43,8 @@ set shell=/bin/bash
 execute pathogen#infect()
 filetype plugin indent on
 
+" Turn NERDTree on, at startup
+let g:nerdtree_tabs_open_on_console_startup=1
 
 """"""""""
 " Macros "
@@ -90,7 +92,7 @@ vnoremap za <C-C>:qa!<CR>
 nnoremap ,ga :Gwrite<CR>:q!<CR>
 
 " Open NERDTree
-nnoremap ,ne :NERDTree<CR>
+nnoremap ,ne :NERDTreeToggle<CR>
 
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
@@ -114,3 +116,4 @@ nnoremap ,tp :tabp<CR>
 nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
 nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
 nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
+
