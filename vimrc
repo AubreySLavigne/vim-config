@@ -102,6 +102,11 @@ nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php
 " Change Modified Phinx File to up/down methods
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
 
+" Tab Navigation
+nnoremap ,tn :tabn<CR>
+nnoremap ,tp :tabp<CR>
+
+
 """"""""""""""""""
 " Quick Snippets "
 """"""""""""""""""

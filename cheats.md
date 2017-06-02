@@ -53,6 +53,7 @@
  * `o` (in NERDTree) == Opens selected dir/file
  * `cd` (in NERDTree) == Change current directory to selected file
  * `r` (in NERDTree) == Refresh Current Dir
+ * `t` (in NERDTree) == Open selected file in new tab
 
 ## vim-fugitive
  * `:Gstatus` == `git status` 
