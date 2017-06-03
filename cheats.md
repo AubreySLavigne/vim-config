@@ -75,14 +75,27 @@
  * `@t` == Convert Old Style Array to new Style
 
 ## Mappings
+
+### Load Files
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
- * `,ga` == git add the current file, then exit
  * `,ne` == Open NERDTree
- * `,phinx` == Load Incomplete Phinx Command
+
+### Exit/Save Files
  * `zz` == ([NV]-mode) Save and exit file
  * `zx` == ([NV]-mode) Exit File Without Saving
  * `za` == ([NV]-mode) Exit All Files Without Saving
+ * `,s` == Save Current File
+ * `,ga` == git add the current file, then exit
+
+### External Programs
+ * `,phinx` == Load Incomplete Phinx Command
+ * `,phm` == Change New Phinx file
+ * `,compose` == Install composer 
+
+### Page Navigation
+ * `,tn` == Go To Next Tab
+ * `,tp` == Go To Prev Tab
 
 ## Notes and Wishlist: 
  * Find Better Alternatives to ctags

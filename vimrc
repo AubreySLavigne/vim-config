@@ -88,6 +88,8 @@ vnoremap zx <C-C>:q!<CR>
 noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
 
+nnoremap ,s :w<CR>
+
 " Add Current File to Repo (git) and exit the file
 nnoremap ,ga :Gwrite<CR>:q!<CR>
 
@@ -100,6 +102,9 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " Phinx Shortcut
 nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
+
+" Install composer.yml
+nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
 
 " Change Modified Phinx File to up/down methods
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
