@@ -113,6 +113,8 @@ nnoremap ,tp :tabp<CR>
 " Quick Snippets "
 """"""""""""""""""
 
+nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
+nnoremap <Leader>nf :-1read ~/.vim/snips/newPHPFile<CR>:5<CR>
 nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
 nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
 nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
