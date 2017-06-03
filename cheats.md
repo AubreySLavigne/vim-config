@@ -16,8 +16,6 @@
  * `:tabclose` == closes current tab`
  * `:+tabmove` == move tab to the right
  * `:-tabmove` == move tab to the last
- * `:tabn` == go to next tab
- * `:tabp` == go to previous tab 
 
 ## Folding:
  * `zF` == create fold
@@ -25,8 +23,6 @@
  * `:{range}fo` == create fold for range
 
 ## Text Objects:
- * `ip` == Act on 'inner paragraph'
- * `it` == Act on 'inner tag'
  * `iW` == word (delimeted by whitespace, not other word breaks)
 
 ## surround.vim:
@@ -47,11 +43,9 @@
  * `ia` == argument only
 
 ## NERDTree
- * `:NERDTree` == Open File Browser
- * `:Bookmark name` == create a bookmark called 'name'
- * `B` (in NERDTree Window) == Opens Bookmarks
  * `o` (in NERDTree) == Opens selected dir/file
- * `cd` (in NERDTree) == Change current directory to selected file
+ * `cd` (in NERDTree) == Current Directory is the NEW pwd
+ * `CD` (in NERDTree) == Changes the current directory to Current Directory
  * `r` (in NERDTree) == Refresh Current Dir
  * `t` (in NERDTree) == Open selected file in new tab
 
@@ -80,6 +74,7 @@
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
  * `,ne` == Open NERDTree
+ * `,snip` == Prompt for Snippet
 
 ### Exit/Save Files
  * `zz` == ([NV]-mode) Save and exit file
@@ -98,6 +93,7 @@
  * `,tp` == Go To Prev Tab
  * `,t<` == Go To First Tab
  * `,t>` == Go To Last Tab
+ * `,tx` == Close the Current tab
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name

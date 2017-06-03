@@ -52,7 +52,7 @@ let g:nerdtree_tabs_open_on_console_startup=1
 
 " Load .vim/ files with shortcut
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
-nnoremap ,rc :vs ~/.vim/vimrc<CR>
+nnoremap ,rc :tabnew ~/.vim/vimrc<CR>:vs ~/.vim/cheats.md<CR>
 
 " Save and Exit the File
 noremap zz :x<CR>
@@ -78,6 +78,9 @@ nnoremap ,ne :NERDTreeToggle<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" Load a Snippet
+nnoremap ,snip :tabnew ~/.vim/snips/
+
 " Phinx Shortcut
 nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
 
@@ -92,6 +95,7 @@ nnoremap ,tn :tabn<CR>
 nnoremap ,tp :tabp<CR>
 nnoremap ,t< :tabfirst<CR>
 nnoremap ,t> :tablast<CR>
+nnoremap ,tx :tabclose<CR>
 
 " Insert Author Tag
 nnoremap ,aub iAubrey Lavigne
@@ -113,8 +117,10 @@ nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
 """"""""""""""""""
 
 nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
+nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
 nnoremap <Leader>nf :-1read ~/.vim/snips/newPHPFile<CR>:5<CR>
 nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
 nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
 nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
+nnoremap <Leader>twign :-1read ~/.vim/snips/twigDefault<CR>3jo<Tab>
 
