@@ -111,6 +111,7 @@
    * Codesniffer
    * Mess detector
    * PHP Documentor (https://github.com/tobyS/pdv)
+ * HTML Validator
  * goto keyword definition
  * fuzzy file search
  * Snippets
