@@ -52,7 +52,7 @@ let g:nerdtree_tabs_open_on_console_startup=1
 
 " Load .vim/ files with shortcut
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
-nnoremap ,rc :tabnew ~/.vim/vimrc<CR>:vs ~/.vim/cheats.md<CR>
+nnoremap ,rc :tabnew ~/.vim/cheats.md<CR>:vs ~/.vim/vimrc<CR>
 
 " Save and Exit the File
 noremap zz :x<CR>
@@ -121,6 +121,7 @@ nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
 nnoremap <Leader>nf :-1read ~/.vim/snips/newPHPFile<CR>:5<CR>
 nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
 nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
+nnoremap <Leader>debug :-1read ~/.vim/snips/phpDebug<CR>
 nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
 nnoremap <Leader>twign :-1read ~/.vim/snips/twigDefault<CR>3jo<Tab>
 
