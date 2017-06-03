@@ -46,28 +46,6 @@ autocmd FileType * if isdirectory('/home/martin/.vim/bundle/' . &ft) | execute p
 " Turn NERDTree on, at startup
 let g:nerdtree_tabs_open_on_console_startup=1
 
-""""""""""
-" Macros "
-""""""""""
-
-" Insert Author Tag
-let @a='iAubrey Lavigne'
-
-" Break this line at column 80
-let @j='80|T i k$'
-
-" Post the currently yanked word, and prepend to word
-let @r='viS"_c  PBi'
-
-" Swap two elements in a tuple (any brace)
-" Undefined behavior if not a tuple
-" [abc, def] => [def, abc]
-let @s='yijdt,/[])}]i, p?[[({]ldw'
-
-" Convert old style array (`array($val)`) to new style (`[$val]`)
-let @t='5h/arraydiwcs(['
-
-
 """"""""""""
 " Mappings "
 """"""""""""
@@ -88,7 +66,7 @@ vnoremap zx <C-C>:q!<CR>
 noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
 
-nnoremap ,s :w<CR>
+nnoremap ,w :w<CR>
 
 " Add Current File to Repo (git) and exit the file
 nnoremap ,ga :Gwrite<CR>:q!<CR>
@@ -112,7 +90,23 @@ nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki
 " Tab Navigation
 nnoremap ,tn :tabn<CR>
 nnoremap ,tp :tabp<CR>
+nnoremap ,t< :tabfirst<CR>
+nnoremap ,t> :tablast<CR>
 
+" Insert Author Tag
+nnoremap ,aub iAubrey Lavigne
+
+" Break this line at column 80, 120
+nnoremap ,80 80\|T i k$
+nnoremap ,120 120\|T i k$
+
+" Post the currently yanked word, and prepend to word
+nnoremap ,pb viS"_c  PBi
+
+" Swap two elements in a tuple (any brace)
+" Undefined behavior if not a tuple
+" [abc, def] => [def, abc]
+nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
 
 """"""""""""""""""
 " Quick Snippets "

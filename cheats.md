@@ -85,7 +85,7 @@
  * `zz` == ([NV]-mode) Save and exit file
  * `zx` == ([NV]-mode) Exit File Without Saving
  * `za` == ([NV]-mode) Exit All Files Without Saving
- * `,s` == Save Current File
+ * `,w` == Save Current File
  * `,ga` == git add the current file, then exit
 
 ### External Programs
@@ -96,6 +96,14 @@
 ### Page Navigation
  * `,tn` == Go To Next Tab
  * `,tp` == Go To Prev Tab
+ * `,t<` == Go To First Tab
+ * `,t>` == Go To Last Tab
+
+### Misc Text Manipulations
+ * `,aub` == Insert my name
+ * `,80` and `,120` == Take the current line and break at 80/120
+ * `,pb` == Paste and Insert to prepend
+ * `,sw` == Swap two items in a tuple
 
 ## Notes and Wishlist: 
  * Find Better Alternatives to ctags
