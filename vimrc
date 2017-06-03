@@ -7,7 +7,7 @@ set shiftwidth=4
 set autoindent
 
 " Highlighting
-syntax on
+filetype on
 set hlsearch
 set incsearch
 
@@ -40,8 +40,8 @@ set shell=/bin/bash
 " Plugin Options "
 """"""""""""""""""
 
-execute pathogen#infect()
-filetype plugin indent on
+execute pathogen#infect('bundle/always/{}')
+autocmd FileType * if isdirectory('/home/martin/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
 
 " Turn NERDTree on, at startup
 let g:nerdtree_tabs_open_on_console_startup=1

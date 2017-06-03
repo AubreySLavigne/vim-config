@@ -2,29 +2,29 @@
 	path = colors
 	url = https://github.com/vim-scripts/icansee.vim
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = bundle/always/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "bundle/vim-indent-object"]
-	path = bundle/vim-indent-object
+	path = bundle/always/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
 [submodule "bundle/argtextobj.vim"]
-	path = bundle/argtextobj.vim
+	path = bundle/always/argtextobj.vim
 	url = https://github.com/vim-scripts/argtextobj.vim
 [submodule "bundle/vim-textobj-user"]
-	path = bundle/vim-textobj-user
+	path = bundle/always/vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user
 [submodule "bundle/vim-textobj-brace"]
-	path = bundle/vim-textobj-brace
+	path = bundle/always/vim-textobj-brace
 	url = https://github.com/Julian/vim-textobj-brace
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = bundle/always/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+	path = bundle/always/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "bundle/vim-textobj-space"]
-	path = bundle/vim-textobj-space
+	path = bundle/always/vim-textobj-space
 	url = https://github.com/saihoooooooo/vim-textobj-space
 [submodule "bundle/vim-nerdtree-tabs"]
-	path = bundle/vim-nerdtree-tabs
+	path = bundle/always/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs
