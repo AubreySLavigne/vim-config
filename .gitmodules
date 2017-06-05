@@ -37,3 +37,6 @@
 [submodule "bundle/html/vim-closetag"]
 	path = bundle/html/vim-closetag
 	url = https://github.com/alvan/vim-closetag
+[submodule "bundle/always/vim-pasta"]
+	path = bundle/always/vim-pasta
+	url = https://github.com/deris/vim-pasta

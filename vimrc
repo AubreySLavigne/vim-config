@@ -8,6 +8,7 @@ set autoindent
 
 " Highlighting
 filetype on
+syntax on
 set hlsearch
 set incsearch
 
