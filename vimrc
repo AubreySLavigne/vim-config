@@ -98,6 +98,9 @@ nnoremap ,t< :tabfirst<CR>
 nnoremap ,t> :tablast<CR>
 nnoremap ,tx :tabclose<CR>
 
+" Set up Marks for resolving conflicts
+nnoremap ,mark /<<<<mq/====ma/>>>>mz
+
 " Insert Author Tag
 nnoremap ,aub iAubrey Lavigne
 
@@ -112,6 +115,10 @@ nnoremap ,pb viS"_c  PBi
 " Undefined behavior if not a tuple
 " [abc, def] => [def, abc]
 nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
+
+" Insert a blank line above/below without insert mode
+nnoremap ,o o
+nnoremap ,O O
 
 "-----------------
 " Quick Snippets "

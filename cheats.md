@@ -60,14 +60,6 @@
 ## vim-textobj-space
  * `iS` == any mixed spaces
 
-## Macros:
- `:2,10norm @p` == Run Macro over a range 
- * `@a` == Insert Author Signature: Aubrey Lavigne
- * `@j` == Break the currently line at column 80 (without breaking words)
- * `@r` == Paste currently yanked text and prepend
- * `@s` == Swap two elements in braces
- * `@t` == Convert Old Style Array to new Style
-
 ## Mappings
 
 ### Load Files
@@ -94,12 +86,14 @@
  * `,t<` == Go To First Tab
  * `,t>` == Go To Last Tab
  * `,tx` == Close the Current tab
+ * `,mark` == Set up Marks for Merging Conflicts
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name
  * `,80` and `,120` == Take the current line and break at 80/120
  * `,pb` == Paste and Insert to prepend
  * `,sw` == Swap two items in a tuple
+ * `,o` and `,O` == Add a blank line above/below
 
 ## Notes and Wishlist: 
  * Find Better Alternatives to ctags
