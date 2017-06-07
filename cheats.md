@@ -66,6 +66,7 @@
  * `,ch` == Load up Cheat List 
  * `,rc` == Load up vimrc
  * `,ne` == Open NERDTree
+ * `,bo` == Navigate to NERDTree and start searching for bookmark
  * `,snip` == Prompt for Snippet
 
 ### Exit/Save Files
