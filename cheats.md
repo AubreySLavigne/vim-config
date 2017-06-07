@@ -86,7 +86,9 @@
  * `,t<` == Go To First Tab
  * `,t>` == Go To Last Tab
  * `,tx` == Close the Current tab
+ * `,ta` == Open a new tab
  * `,mark` == Set up Marks for Merging Conflicts
+ * `,delm` == Delete marks as set in `,mark`
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name

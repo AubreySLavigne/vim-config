@@ -67,6 +67,7 @@ vnoremap zx <C-C>:q!<CR>
 noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
 
+" Fast File Save
 nnoremap ,w :w<CR>
 
 " Add Current File to Repo (git) and exit the file
@@ -78,9 +79,6 @@ nnoremap ,ne :NERDTreeToggle<CR>
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
-" Load a Snippet
-nnoremap ,snip :tabnew ~/.vim/snips/
 
 " Phinx Shortcut
 nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
@@ -97,9 +95,11 @@ nnoremap ,tp :tabp<CR>
 nnoremap ,t< :tabfirst<CR>
 nnoremap ,t> :tablast<CR>
 nnoremap ,tx :tabclose<CR>
+nnoremap ,ta :tabnew<CR>
 
 " Set up Marks for resolving conflicts
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
+nnoremap ,delm 'qd'z
 
 " Insert Author Tag
 nnoremap ,aub iAubrey Lavigne
@@ -119,6 +119,12 @@ nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
 " Insert a blank line above/below without insert mode
 nnoremap ,o o
 nnoremap ,O O
+
+" `x` should not copy to register
+nnoremap x "_x
+
+" Load a Snippet
+nnoremap ,snip :tabnew ~/.vim/snips/
 
 "-----------------
 " Quick Snippets "
