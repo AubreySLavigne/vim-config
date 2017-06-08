@@ -90,6 +90,7 @@
  * `,ta` == Open a new tab
  * `,mark` == Set up Marks for Merging Conflicts
  * `,delm` == Delete marks as set in `,mark`
+ * `,woq` == Go to next index without quotes ('WithOut Quotes')
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name

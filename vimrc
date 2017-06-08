@@ -77,7 +77,7 @@ nnoremap ,ga :Gwrite<CR>:q!<CR>
 " Open NERDTree
 nnoremap ,ne :NERDTreeToggle<CR>
 " GoTo bookmark (keep typing)
-nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c"
+nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
 
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
@@ -103,6 +103,9 @@ nnoremap ,ta :tabnew<CR>
 " Set up Marks for resolving conflicts
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
 nnoremap ,delm 'qd'z
+
+" GoTo next index that does not have quotes
+nnoremap ,woq /\[[A-Za-z][A-Za-z0-9_]\+\]<CR>l
 
 " Insert Author Tag
 nnoremap ,aub iAubrey Lavigne
