@@ -68,6 +68,7 @@
  * `,ne` == Open NERDTree
  * `,bo` == Navigate to NERDTree and start searching for bookmark
  * `,snip` == Prompt for Snippet
+ * `,errl` == Load PHP Error Log (last 100 lines)
 
 ### Exit/Save Files
  * `zz` == ([NV]-mode) Save and exit file

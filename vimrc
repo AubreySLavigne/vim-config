@@ -42,7 +42,7 @@ set shell=/bin/bash
 "-----------------
 
 execute pathogen#infect('bundle/always/{}')
-autocmd FileType * if isdirectory('/home/martin/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
+autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
 
 " Turn NERDTree on with bookmarks, at startup
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -97,7 +97,7 @@ nnoremap ,tn :tabn<CR>
 nnoremap ,tp :tabp<CR>
 nnoremap ,t< :tabfirst<CR>
 nnoremap ,t> :tablast<CR>
-nnoremap ,tx :tabclose<CR>
+nnoremap ,tx :tabclose!<CR>
 nnoremap ,ta :tabnew<CR>
 
 " Set up Marks for resolving conflicts
@@ -123,14 +123,17 @@ nnoremap ,pb viS"_c  PBi
 nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
 
 " Insert a blank line above/below without insert mode
-nnoremap ,o o
-nnoremap ,O O
+nnoremap ,o ok
+nnoremap ,O Oj
 
 " `x` should not copy to register
 nnoremap x "_x
 
 " Load a Snippet
 nnoremap ,snip :tabnew ~/.vim/snips/
+
+" Load Error File into a buffer
+nnoremap ,errl :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 
 "-----------------
 " Quick Snippets "
