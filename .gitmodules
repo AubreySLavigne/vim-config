@@ -40,3 +40,6 @@
 [submodule "bundle/always/vim-pasta"]
 	path = bundle/always/vim-pasta
 	url = https://github.com/deris/vim-pasta
+[submodule "bundle/always/vim-gitgutter"]
+	path = bundle/always/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter

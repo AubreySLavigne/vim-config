@@ -111,8 +111,8 @@ nnoremap ,woq /\[[A-Za-z][A-Za-z0-9_]\+\]<CR>l
 nnoremap ,aub iAubrey Lavigne
 
 " Break this line at column 80, 120
-nnoremap ,80 80\|T i k$
-nnoremap ,120 120\|T i k$
+nnoremap ,80 80\|T i 
+nnoremap ,120 120\|T i 
 
 " Post the currently yanked word, and prepend to word
 nnoremap ,pb viS"_c  PBi

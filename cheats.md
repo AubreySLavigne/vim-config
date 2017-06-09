@@ -60,6 +60,13 @@
 ## vim-textobj-space
  * `iS` == any mixed spaces
 
+## vim-gitgutter
+ * `]c` and `]c` == Jump to next and previous git changes
+ * `<Leader>hu` == Undo selected change
+ * `<Leader>hs` == Stage selected change
+ * `<Leader>hp` == Preview selected change
+ * `ic` and `ac` == Text Objects for selected Change
+
 ## Mappings
 
 ### Load Files
