@@ -5,7 +5,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
-set nofixeol
+silent! set nofixeol
 
 " Highlighting
 filetype on
@@ -68,6 +68,9 @@ vnoremap zx <C-C>:q!<CR>
 " Exit all Files
 noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
+
+" Close Preview Window
+noremap ,pc :pc<CR>
 
 " Fast File Save
 nnoremap ,w :w<CR>

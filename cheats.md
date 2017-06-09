@@ -83,6 +83,7 @@
  * `za` == ([NV]-mode) Exit All Files Without Saving
  * `,w` == Save Current File
  * `,ga` == git add the current file, then exit
+ * `,pc` == Close Preview Window
 
 ### External Programs
  * `,phinx` == Load Incomplete Phinx Command
