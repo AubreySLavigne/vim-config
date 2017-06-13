@@ -96,6 +96,9 @@ nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
 " Change Modified Phinx File to up/down methods
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
 
+" Run PHPUnit Tests
+nnoremap ,test :! phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>L
+
 " Tab Navigation
 nnoremap ,tn :tabn<CR>
 nnoremap ,tp :tabp<CR>
@@ -143,12 +146,31 @@ nnoremap ,errl :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 " Quick Snippets "
 "-----------------
 
-nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
-nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
+"" PHP General
 nnoremap <Leader>nf :-1read ~/.vim/snips/newPHPFile<CR>:5<CR>
-nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
-nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
+
+"" Slim New Route
+nnoremap <Leader>tsnr :-1read ~/.vim/snips/slimNewRoute<CR>0f{
+nnoremap <Leader>tsrc :-1read ~/.vim/snips/slimRouteClass<CR>gg
+
+"" New Paris Model
+nnoremap <Leader>tpnm :-1read ~/.vim/snips/parisNewModel<CR>gg
+
+"" PHP Error
+nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
 nnoremap <Leader>debug :-1read ~/.vim/snips/phpDebug<CR>
+nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
+nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
+
+"" PHPUnit Testing
+nnoremap <Leader>putc :-1read ~/.vim/snips/phpUnitClass<CR>2jfF
+nnoremap <Leader>putm :-1read ~/.vim/snips/phpUnitMethod<CR>3jfT
+nnoremap <Leader>pum :-1read ~/.vim/snips/phpUnitMock<CR>3jfT
+
+"" Phinx
 nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
+
+"" HTML
+nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
 nnoremap <Leader>twign :-1read ~/.vim/snips/twigDefault<CR>3jo<Tab>
 

@@ -1,0 +1,1 @@
+            $this->get('{ROUTE}', '{FULLCLASSNAME}:{METHOD}');

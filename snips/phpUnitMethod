@@ -1,0 +1,17 @@
+    /**
+     * @dataProvider dp_{TEST_NAME}
+     */ 
+    public function {TEST NAME}({PARAM LIST}) {
+
+        /**
+         * Run Test
+         */
+    }
+
+    public function dp_{TEST_NAME} () {
+        return [
+            '{DATASET NAME}' => [
+                '{VAR NAME}' => {VAR VALUE}
+            ]
+        ]
+    }

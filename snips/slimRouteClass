@@ -1,0 +1,32 @@
+<?php
+
+namespace {NAMESPACE};
+
+class {CLASSNAME} {
+
+    public function __construct($container)
+    {
+        $this->container = $container;
+        $this->user = $container->getUserObject();
+        $this->model = new {MODEL}();
+    }
+
+    public function {METHOD}($req, $res, $args) {
+        try {
+            $body = $req->getParsedBody();
+
+            if (is_null($body)) {
+                return $res->withStatus(400)->withJson(['message' => 'The request body is invalid.']);
+            }
+
+            $record = $this->model->{METHOD}({METHODARGS});
+            if ($record) {
+                return $res->withStatus(200)->withJson($record->asArray());
+            }
+        }
+        catch(\Exception $ex) {
+            return $res->withStatus(500)->withJson(['message' => $ex->getMessage()]);
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+<?php 
+
+namespace {NAMESPACE};
+
+use {MODELPATH};
+
+class {MODELNAME} extends Model {
+    public static $_table = '{DBTABLE}';
+    public static $_id = '{IDNAME}';
+}
+
+
