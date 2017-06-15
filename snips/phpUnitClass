@@ -1,6 +1,6 @@
 <?php
 
-namespace \STM\Test\{FINISHNAMESPACE};
+namespace {NAMESPACE};
 
 class {TESTNAME}Test  extends \DbUnitTest {
 

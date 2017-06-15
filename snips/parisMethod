@@ -1,0 +1,13 @@
+    /**
+     * {COMMENT}
+     * {PARAMS}
+     * @return {RETURN}
+     */
+    public function {METHOD}({PARAMLIST}) {
+        $results = self::getByFactory()
+            ->selectMany([
+                {FIELDS}
+            ]);
+
+        return $results->findMany();
+    }

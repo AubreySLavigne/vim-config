@@ -11,6 +11,9 @@ class {CLASSNAME} {
         $this->model = new {MODEL}();
     }
 
+    /**
+     * {COMMENT}
+     */
     public function {METHOD}($req, $res, $args) {
         try {
             $body = $req->getParsedBody();

@@ -83,12 +83,15 @@ nnoremap ,ne :NERDTreeToggle<CR>
 " GoTo bookmark (keep typing)
 nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
 
+" GoTo Next {VARFIELD}
+nnoremap ,[ /{[A-Z]*}<CR>
+
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " Phinx Shortcut
-nnoremap ,phinx :!phinx --configuration=$CONF_DIR/phinx.php 
+nnoremap ,phinx :!cd $APPLICATION_DIR && phinx --configuration=conf_files/application/phinx.php 
 
 " Install composer.yml
 nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
@@ -97,15 +100,21 @@ nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
 
 " Run PHPUnit Tests
-nnoremap ,test :! phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>L
+nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>L
 
 " Tab Navigation
+nnoremap ,ta :tabnew<CR>
+nnoremap ,tx :tabclose!<CR>
+
 nnoremap ,tn :tabn<CR>
 nnoremap ,tp :tabp<CR>
-nnoremap ,t< :tabfirst<CR>
-nnoremap ,t> :tablast<CR>
-nnoremap ,tx :tabclose!<CR>
-nnoremap ,ta :tabnew<CR>
+nnoremap ,t0 :tabfirst<CR>
+nnoremap ,t1 :tabfirst<CR>
+nnoremap ,t2 :tabfirst<CR>:tabn<CR>
+nnoremap ,t3 :tabfirst<CR>:tabn<CR>:tabn<CR>
+nnoremap ,t4 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>
+nnoremap ,t5 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>:tabn<CR>
+nnoremap ,t$ :tablast<CR>
 
 " Set up Marks for resolving conflicts
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
@@ -155,6 +164,7 @@ nnoremap <Leader>tsrc :-1read ~/.vim/snips/slimRouteClass<CR>gg
 
 "" New Paris Model
 nnoremap <Leader>tpnm :-1read ~/.vim/snips/parisNewModel<CR>gg
+nnoremap <Leader>pm :-1read ~/.vim/snips/parisMethod<CR>,[
 
 "" PHP Error
 nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
@@ -163,7 +173,7 @@ nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
 nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
 
 "" PHPUnit Testing
-nnoremap <Leader>putc :-1read ~/.vim/snips/phpUnitClass<CR>2jfF
+nnoremap <Leader>puc :-1read ~/.vim/snips/phpUnitClass<CR>2jfF
 nnoremap <Leader>putm :-1read ~/.vim/snips/phpUnitMethod<CR>3jfT
 nnoremap <Leader>pum :-1read ~/.vim/snips/phpUnitMock<CR>3jfT
 

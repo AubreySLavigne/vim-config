@@ -8,6 +8,7 @@
  * `^o` == return to the previous file/cursor location
  * `J` and `K` == (V-mode) Move Selected Block Up and Down
  * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
+ * `{range}=` == (N-mode) retab range
 
 ## Tabs:
  * `:tabnew` == opens new tab
@@ -91,15 +92,23 @@
  * `,compose` == Install composer 
 
 ### Page Navigation
- * `,tn` == Go To Next Tab
- * `,tp` == Go To Prev Tab
- * `,t<` == Go To First Tab
- * `,t>` == Go To Last Tab
- * `,tx` == Close the Current tab
- * `,ta` == Open a new tab
  * `,mark` == Set up Marks for Merging Conflicts
  * `,delm` == Delete marks as set in `,mark`
  * `,woq` == Go to next index without quotes ('WithOut Quotes')
+ * `,[` == Go to next {PLACEHOLDER}
+
+### Tab Navigation
+ * `,tn` == Go To Next Tab
+ * `,tp` == Go To Prev Tab
+ * `,tx` == Close the Current tab
+ * `,ta` == Open a new tab
+ * `,t0` == Go to Tab #1
+ * `,t1` == Go to Tab #1
+ * `,t2` == Go to Tab #2
+ * `,t3` == Go to Tab #3
+ * `,t4` == Go to Tab #4
+ * `,t5` == Go to Tab #5
+ * `,t$` == Go to Last Tab
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name

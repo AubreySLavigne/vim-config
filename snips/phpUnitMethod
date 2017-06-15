@@ -1,17 +1,31 @@
     /**
-     * @dataProvider dp_{TEST_NAME}
+     * @dataProvider dp_{TESTNAME}
      */ 
-    public function {TEST NAME}({PARAM LIST}) {
+    public function test{TESTNAME}($username, $password, {PARAMLIST}, $expectedResponse) {
 
         /**
          * Run Test
          */
+        $response = \Util::sendApiRequest('{METHOD}', '{CALLROUTE}', $username, $password);
+        $response['response'] = json_decode($response['response'], true);
+        $this->assertEquals(
+            $expectedResponse,
+            $response
+        );
     }
 
-    public function dp_{TEST_NAME} () {
+    public function dp_{TESTNAME} () {
         return [
-            '{DATASET NAME}' => [
-                '{VAR NAME}' => {VAR VALUE}
+            '{DATASETNAME}' => [
+                'username' => '{USER}',
+                'password' => '{PASS}',
+                '{MOREPARAMS}' => {PARAMVAL}
+                'expectedResponse' => [
+                    'status' => 200,
+                    'response' => [
+                        {RESPONSES}
+                    ]
+                ]
             ]
-        ]
+        ];
     }
