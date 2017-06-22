@@ -100,7 +100,8 @@ nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
 
 " Run PHPUnit Tests
-nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>L
+nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>LmT
+nnoremap ,ct 'T:q!<CR>
 
 " Tab Navigation
 nnoremap ,ta :tabnew<CR>
