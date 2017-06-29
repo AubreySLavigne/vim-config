@@ -5,13 +5,12 @@
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `gf` == go to file under cursor
- * `^o` == return to the previous file/cursor location
  * `J` and `K` == (V-mode) Move Selected Block Up and Down
+ * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
  * `{range}=` == (N-mode) retab range
 
 ## Tabs:
- * `:tabnew` == opens new tab
  * `:0tabnew` == opens new tab in first slot
  * `:$tabnew` == opens new tab in last slot
  * `:tabclose` == closes current tab`
@@ -24,7 +23,7 @@
  * `:{range}fo` == create fold for range
 
 ## Text Objects:
- * `iW` == word (delimeted by whitespace, not other word breaks)
+ * (None Currently)
 
 ## surround.vim:
  * `cs"'` == change surrounding " to '
