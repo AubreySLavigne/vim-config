@@ -8,7 +8,7 @@ set autoindent
 silent! set nofixeol
 
 " Highlighting
-filetype on
+filetype plugin indent on
 syntax on
 set hlsearch
 set incsearch
@@ -82,6 +82,8 @@ nnoremap ,ga :Gwrite<CR>:q!<CR>
 nnoremap ,ne :NERDTreeToggle<CR>
 " GoTo bookmark (keep typing)
 nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
+" Set NERDTree DocRoot
+nnoremap ,nd :Bookmark DocRoot<CR>
 
 " GoTo Next {VARFIELD}
 nnoremap ,[ /{[A-Z]*}<CR>
@@ -99,9 +101,11 @@ nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
 " Change Modified Phinx File to up/down methods
 nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki        
 
+" Generate ctags in background
+nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
+
 " Run PHPUnit Tests
 nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>LmT
-nnoremap ,ct 'T:q!<CR>
 
 " Tab Navigation
 nnoremap ,ta :tabnew<CR>

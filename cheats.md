@@ -4,6 +4,7 @@
  * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
+ * `^^` == Go to the previously opened file
  * `gf` == go to file under cursor
  * `J` and `K` == (V-mode) Move Selected Block Up and Down
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
@@ -74,6 +75,7 @@
  * `,rc` == Load up vimrc
  * `,ne` == Open NERDTree
  * `,bo` == Navigate to NERDTree and start searching for bookmark
+ * `,nd` == Set NERDTree DocRoot bookmark
  * `,snip` == Prompt for Snippet
  * `,errl` == Load PHP Error Log (last 100 lines)
 
