@@ -43,3 +43,6 @@
 [submodule "bundle/always/vim-gitgutter"]
 	path = bundle/always/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/always/vim-repeat"]
+	path = bundle/always/vim-repeat
+	url = https://github.com/tpope/vim-repeat

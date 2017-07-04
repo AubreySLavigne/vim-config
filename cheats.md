@@ -139,6 +139,12 @@
  * Plugin called Command-T? ctrlp?
  * Read "Learning Vimscript the Hard Way"
  * Watch videos on cvimcasts.org
+ * Look into other vim-repeat projects:
+   * speeddating.vim
+   * abolish.vim
+   * unimpaired.vim
+   * commentary.vim
+   * vim-easyclip
 
 ## Tips:
  * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
