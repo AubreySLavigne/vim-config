@@ -117,6 +117,7 @@
  * `,pb` == Paste and Insert to prepend
  * `,sw` == Swap two items in a tuple
  * `,o` and `,O` == Add a blank line above/below
+ * `,k` and `,K` == Toggle Checkbox ([ ]) in Markdown file
 
 ## Notes and Wishlist: 
  * Find Better Alternatives to ctags
@@ -135,7 +136,7 @@
  * Set different text color after column 80
  * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
  * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
- * Plugin called Command-T?
+ * Plugin called Command-T? ctrlp?
  * Read "Learning Vimscript the Hard Way"
  * Watch videos on cvimcasts.org
 

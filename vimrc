@@ -92,6 +92,9 @@ nnoremap ,[ /{[A-Z]*}<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+nnoremap ,k :s/\[ ]/[x]/<CR>
+nnoremap ,K :s/\[x]/[ ]/<CR>
+
 " Phinx Shortcut
 nnoremap ,phinx :!cd $APPLICATION_DIR && phinx --configuration=conf_files/application/phinx.php 
 
