@@ -49,6 +49,9 @@ autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | 
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeShowBookmarks=1
 
+" Close HTML tags
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
+
 "-----------
 " Mappings "
 "-----------

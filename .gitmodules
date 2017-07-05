@@ -46,3 +46,6 @@
 [submodule "bundle/always/vim-repeat"]
 	path = bundle/always/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "bundle/always/vim-closetag"]
+	path = bundle/always/vim-closetag
+	url = https://github.com/alvan/vim-closetag
