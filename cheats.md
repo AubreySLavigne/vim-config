@@ -10,6 +10,7 @@
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
  * `{range}=` == (N-mode) retab range
+ * `I` and `A` move to the start and end of a line in Insert (good for repeatabilit)
 
 ## Tabs:
  * `:0tabnew` == opens new tab in first slot
@@ -158,5 +159,5 @@
 ## Tips:
  * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
  * Build fail safes for common typos (Intolerance of Typos)
- * Make Macros reusable
+ * Commands should focus on repeatability 
 
