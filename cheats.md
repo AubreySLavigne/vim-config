@@ -84,8 +84,13 @@
  * `zx` == ([NV]-mode) Exit File Without Saving
  * `za` == ([NV]-mode) Exit All Files Without Saving
  * `,w` == Save Current File
- * `,ga` == git add the current file, then exit
  * `,pc` == Close Preview Window
+
+### Git Bindings
+ * `,ga` == git add 
+ * `,gs` == git status
+ * `,gc` == git commit
+ * `,gp` == git push
 
 ### External Programs
  * `,phinx` == Load Incomplete Phinx Command

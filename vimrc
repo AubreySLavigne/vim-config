@@ -78,8 +78,17 @@ noremap ,pc :pc<CR>
 " Fast File Save
 nnoremap ,w :w<CR>
 
-" Add Current File to Repo (git) and exit the file
-nnoremap ,ga :Gwrite<CR>:q!<CR>
+" Git Add
+nnoremap ,ga :Gwrite<CR>
+
+" Git Status
+nnoremap ,gs :Gstatus<CR>
+
+" Git Commit
+nnoremap ,gc :Gcommit<CR>
+
+" Git Push
+nnoremap ,gp :Gpush<CR>
 
 " Open NERDTree
 nnoremap ,ne :NERDTreeToggle<CR>
