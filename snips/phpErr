@@ -1,3 +1,0 @@
-echo '<pre>';
-var_dump( {VARIABLES} ); // echo "";
-echo '</pre>';

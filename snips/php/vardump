@@ -1,0 +1,5 @@
+echo '<pre>';
+var_dump( {VARIABLES} ); 
+// echo "";
+// print_r({VARIABLE}, true);
+echo '</pre>';

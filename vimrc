@@ -171,36 +171,38 @@ nnoremap ,snip :tabnew ~/.vim/snips/
 " Load Error File into a buffer
 nnoremap ,errl :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 
-"-----------------
-" Quick Snippets "
-"-----------------
+"---------------------
+" Templates Snippets "
+"---------------------
 
 "" PHP General
-nnoremap <Leader>nf :-1read ~/.vim/snips/newPHPFile<CR>:5<CR>
+nnoremap <Leader>nf :-1read ~/.vim/snips/php/newFile<CR>:5<CR>
+nnoremap <Leader>err :-1read ~/.vim/snips/php/displayErrors<CR>jf 
+nnoremap <Leader>debug :-1read ~/.vim/snips/php/vardump<CR>
+nnoremap <Leader>pre :-1read ~/.vim/snips/php/pre<CR>o
 
 "" Slim New Route
-nnoremap <Leader>tsnr :-1read ~/.vim/snips/slimNewRoute<CR>0f{
-nnoremap <Leader>tsrc :-1read ~/.vim/snips/slimRouteClass<CR>gg
+nnoremap <Leader>tsnr :-1read ~/.vim/snips/slim/newRoute<CR>0f{
+nnoremap <Leader>tsrc :-1read ~/.vim/snips/slim/newRouteClass<CR>gg
 
 "" New Paris Model
-nnoremap <Leader>tpnm :-1read ~/.vim/snips/parisNewModel<CR>gg
-nnoremap <Leader>pm :-1read ~/.vim/snips/parisMethod<CR>,[
+nnoremap <Leader>tpnm :-1read ~/.vim/snips/paris/newModel<CR>gg
+nnoremap <Leader>pm :-1read ~/.vim/snips/paris/newModel<CR>,[
 
-"" PHP Error
-nnoremap <Leader>err :-1read ~/.vim/snips/phpErr<CR>jf 
-nnoremap <Leader>debug :-1read ~/.vim/snips/phpDebug<CR>
-nnoremap <Leader>pre :-1read ~/.vim/snips/preformatted<CR>o
-nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiormLastStatement<CR>k
+"" Idiorm 
+nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiorm/debugLastStatement<CR>k
 
 "" PHPUnit Testing
-nnoremap <Leader>puc :-1read ~/.vim/snips/phpUnitClass<CR>2jfF
-nnoremap <Leader>putm :-1read ~/.vim/snips/phpUnitMethod<CR>3jfT
-nnoremap <Leader>pum :-1read ~/.vim/snips/phpUnitMock<CR>3jfT
+nnoremap <Leader>puc :-1read ~/.vim/snips/phpunit/newClass<CR>2jfF
+nnoremap <Leader>putm :-1read ~/.vim/snips/phpunit/newMethod<CR>3jfT
+nnoremap <Leader>pum :-1read ~/.vim/snips/phpunit/newMock<CR>3jfT
 
 "" Phinx
-nnoremap <Leader>table :-1read ~/.vim/snips/phinxTable<CR>f{w
+nnoremap <Leader>table :-1read ~/.vim/snips/phinx/getTable<CR>f{w
+
+"" Twig
+nnoremap <Leader>tw :-1read ~/.vim/snips/twig/render<CR>
 
 "" HTML
-nnoremap <Leader>html :-1read ~/.vim/snips/html<CR>/body<BR>o<Tab>
-nnoremap <Leader>twign :-1read ~/.vim/snips/twigDefault<CR>3jo<Tab>
+nnoremap <Leader>html :-1read ~/.vim/snips/html/newFile<CR>
 
