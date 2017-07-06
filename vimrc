@@ -121,6 +121,7 @@ nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
 
 " Run PHPUnit Tests
 nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>LmT
+nnoremap ,ret lzx,test
 
 " Tab Navigation
 nnoremap ,ta :tabnew<CR>
