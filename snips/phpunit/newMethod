@@ -1,5 +1,5 @@
     /**
-     * @dataProvider dp_{TESTNAME}
+     * @dataProvider dp_test{TESTNAME}
      */ 
     public function test{TESTNAME}($username, $password, {PARAMLIST}, $expectedResponse) {
 
@@ -14,7 +14,7 @@
         );
     }
 
-    public function dp_{TESTNAME} () {
+    public function dp_test{TESTNAME} () {
         return [
             '{DATASETNAME}' => [
                 'username' => '{USER}',
