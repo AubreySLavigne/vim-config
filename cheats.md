@@ -102,6 +102,7 @@
  * `,delm` == Delete marks as set in `,mark`
  * `,woq` == Go to next index without quotes ('WithOut Quotes')
  * `,[` == Go to next {PLACEHOLDER}
+ * `,ff` == Go to next linux-style filepath
 
 ### Tab Navigation
  * `,tn` == Go To Next Tab
@@ -150,6 +151,9 @@
    * unimpaired.vim
    * commentary.vim
    * vim-easyclip
+ * Look into tmux -- probably better than how I'm handling windows right now
+ * Look into https://github.com/adoy/vim-php-refactoring-toolbox (PHP Plugin)
+ * Look into [PHP Plugins](https://www.reddit.com/r/PHP/comments/23okor/vim_users_who_code_in_php_what_plugins_do_you_have/)
 
 ## Tips:
  * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
