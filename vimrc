@@ -191,7 +191,7 @@ nnoremap ,snip :tabnew ~/.vim/snips/
 nnoremap ,[ /{[A-Z]*}<CR>
 
 " Load Error File into a buffer
-nnoremap ,errl :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
+nnoremap ,err :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 
 " }}}1
 
