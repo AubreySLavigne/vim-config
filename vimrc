@@ -1,5 +1,8 @@
 
-" Encoding/Whitespace Options
+" AubreySLavigne vimrc
+
+" Settings {{{1
+" Encoding/Whitespace Options {{{2
 set encoding=utf-8
 set tabstop=4
 set expandtab
@@ -7,25 +10,26 @@ set shiftwidth=4
 set autoindent
 silent! set nofixeol
 
-" Highlighting
+" Highlighting {{{2
 filetype plugin indent on
 syntax on
 set hlsearch
 set incsearch
+setlocal foldmethod=marker      " This file only
 
-" Numbering
+" Numbering {{{2
 set nu
 
-" Status Line Comments
+" Status Line Comments {{{2
 set showcmd
 set ruler
 
-" Don't create swp files
+" Don't create swp files {{{2
 set nobackup
 set nowritebackup
 set noswapfile
 
-" Color Settings
+" Color Settings {{{2
 set t_Co=256
 
 " if filereadable("colors/colors/icansee.vim")
@@ -35,30 +39,32 @@ set t_Co=256
      colorscheme desert
 " endif
 
-" Shell Configuration
+" Shell Configuration {{{2
 set shell=/bin/bash
 
-"-----------------
-" Plugin Options "
-"-----------------
+" }}}1
+
+" Plugin Options {{{1
 
 execute pathogen#infect('bundle/always/{}')
 autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
 
-" Turn NERDTree on with bookmarks, at startup
+"" NERDTree config {{{2
 let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeShowBookmarks=1
 
-" Close HTML tags
+"" vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
 
-"-----------
-" Mappings "
-"-----------
+" }}}1
+
+" Mappings {{{1
 
 " Load .vim/ files with shortcut
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
 nnoremap ,rc :tabnew ~/.vim/cheats.md<CR>:vs ~/.vim/vimrc<CR>
+
+"" File Save/Edit {{{2
 
 " Save and Exit the File
 noremap zz :x<CR>
@@ -78,6 +84,10 @@ noremap ,pc :pc<CR>
 " Fast File Save
 nnoremap ,w :w<CR>
 
+"" }}}2
+
+"" Git {{{2
+
 " Git Add
 nnoremap ,ga :Gwrite<CR>
 
@@ -90,6 +100,9 @@ nnoremap ,gc :Gcommit<CR>
 " Git Push
 nnoremap ,gp :Gpush<CR>
 
+"" }}}2
+
+"" NERDTree Bindings {{{2
 " Open NERDTree
 nnoremap ,ne :NERDTreeToggle<CR>
 " GoTo bookmark (keep typing)
@@ -97,8 +110,7 @@ nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
 " Set NERDTree DocRoot
 nnoremap ,nd :Bookmark DocRoot<CR>
 
-" GoTo Next {VARFIELD}
-nnoremap ,[ /{[A-Z]*}<CR>
+"" }}}2
 
 " GoTo Next filepath
 nnoremap ,ff /\(\/[A-Za-z_.]*\)\+<CR>
@@ -126,7 +138,8 @@ nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
 nnoremap ,test :! cd $TEST_DIR && phpunit --bootstrap=bootstrap.php --no-coverage % > /tmp/tests<CR>:vs /tmp/tests<CR>LmT
 nnoremap ,ret lzx,test
 
-" Tab Navigation
+" Tab Navigation {{{2
+
 nnoremap ,ta :tabnew<CR>
 nnoremap ,tx :tabclose!<CR>
 
@@ -139,6 +152,8 @@ nnoremap ,t3 :tabfirst<CR>:tabn<CR>:tabn<CR>
 nnoremap ,t4 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>
 nnoremap ,t5 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>:tabn<CR>
 nnoremap ,t$ :tablast<CR>
+
+"" }}}2
 
 " Set up Marks for resolving conflicts
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
@@ -172,12 +187,15 @@ nnoremap x "_x
 " Load a Snippet
 nnoremap ,snip :tabnew ~/.vim/snips/
 
+" GoTo Next {VARFIELD}
+nnoremap ,[ /{[A-Z]*}<CR>
+
 " Load Error File into a buffer
 nnoremap ,errl :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 
-"---------------------
-" Templates Snippets "
-"---------------------
+" }}}1
+
+" Templates Snippets " {{{1
 
 "" PHP General
 nnoremap <Leader>nf :-1read ~/.vim/snips/php/newFile<CR>:5<CR>
@@ -209,4 +227,6 @@ nnoremap <Leader>tw :-1read ~/.vim/snips/twig/render<CR>
 
 "" HTML
 nnoremap <Leader>html :-1read ~/.vim/snips/html/newFile<CR>
+
+" }}}1
 
