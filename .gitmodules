@@ -49,3 +49,6 @@
 [submodule "bundle/always/vim-signature"]
 	path = bundle/always/vim-signature
 	url = https://github.com/kshenoy/vim-signature
+[submodule "bundle/php/vim-phpqa"]
+	path = bundle/php/vim-phpqa
+	url = https://github.com/joonty/vim-phpqa
