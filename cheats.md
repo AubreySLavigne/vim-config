@@ -21,6 +21,7 @@
 
 ## Folding:
  * `zF` == create fold
+ * `zc` == close current fold
  * `zd` == delete fold at the cursor
  * `:{range}fo` == create fold for range
 
