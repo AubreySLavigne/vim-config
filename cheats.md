@@ -11,6 +11,8 @@
  * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
  * `{range}=` == (N-mode) retab range
  * `I` and `A` move to the start and end of a line in Insert (good for repeatabilit)
+ * `^e` and `^y` == Scroll the window down and up
+ * `:earlier 2m` ==  Go back two minutes (mind blown)
 
 ## Tabs:
  * `:0tabnew` == opens new tab in first slot
