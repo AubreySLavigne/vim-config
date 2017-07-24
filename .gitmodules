@@ -55,3 +55,6 @@
 [submodule "bundle/always/vim-textobj-line"]
 	path = bundle/always/vim-textobj-line
 	url = https://github.com/kana/vim-textobj-line
+[submodule "bundle/always/ctrlp.vim"]
+	path = bundle/always/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
