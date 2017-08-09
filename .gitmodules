@@ -28,9 +28,6 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/always/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs
-[submodule "bundle/php/phpcd.vim"]
-	path = bundle/php/phpcd.vim
-	url = https://github.com/lvht/phpcd.vim
 [submodule "bundle/always/auto-pairs"]
 	path = bundle/always/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
