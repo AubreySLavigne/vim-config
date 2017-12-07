@@ -55,6 +55,22 @@ let NERDTreeShowBookmarks=1
 
 " vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
+
+" vim-ultisnips config {{{2
+
+set runtimepath+=~/.ultisnips
+
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-Z>"
+
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsSnippetsDir="~/.ultisnips/UltiSnips"
+
+" Automatic Linting Enging (ALE) config {{{2
+let g:ale_linters = {
+            \ 'php' : ['php']
+            \ }
 " }}}1
 
 " Mappings {{{1
@@ -191,6 +207,9 @@ nnoremap ,gp :Gpush<CR>
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
 nnoremap ,delm 'qd'z
 
+" Git/Fugitive {{{3
+nnoremap ,U :UltiSnipsEdit<CR>
+
 " }}}2
 " External Programs {{{2
 " Install composer.yml {{{3
@@ -210,38 +229,5 @@ nnoremap ,phm /n cwciwupkd%4yy3jap2wciwdownkkki
 
 nnoremap ,phinx :!cd $APPLICATION_DIR && phinx --configuration=conf_files/application/phinx.php 
 
-" }}}1
-
-" Templates Snippets " {{{1
-"" PHP General {{{2
-nnoremap <Leader>nf :-1read ~/.vim/snips/php/newFile<CR>:5<CR>
-nnoremap <Leader>err :-1read ~/.vim/snips/php/displayErrors<CR>jf 
-nnoremap <Leader>debug :-1read ~/.vim/snips/php/vardump<CR>
-nnoremap <Leader>pre :-1read ~/.vim/snips/php/pre<CR>o
-
-"" Slim New Route {{{2
-nnoremap <Leader>tsnr :-1read ~/.vim/snips/slim/newRoute<CR>0f{
-nnoremap <Leader>tsrc :-1read ~/.vim/snips/slim/newRouteClass<CR>gg
-
-"" New Paris Model {{{2
-nnoremap <Leader>tpnm :-1read ~/.vim/snips/paris/newModel<CR>gg
-nnoremap <Leader>pm :-1read ~/.vim/snips/paris/newModel<CR>,[
-
-"" Idiorm  {{{2
-nnoremap <Leader>ormLast :-1read ~/.vim/snips/idiorm/debugLastStatement<CR>k
-
-"" PHPUnit Testing {{{2
-nnoremap <Leader>puc :-1read ~/.vim/snips/phpunit/newClass<CR>2jfF
-nnoremap <Leader>putm :-1read ~/.vim/snips/phpunit/newMethod<CR>3jfT
-nnoremap <Leader>pum :-1read ~/.vim/snips/phpunit/newMock<CR>3jfT
-
-"" Phinx {{{2
-nnoremap <Leader>table :-1read ~/.vim/snips/phinx/getTable<CR>f{w
-
-"" Twig {{{2
-nnoremap <Leader>tw :-1read ~/.vim/snips/twig/render<CR>
-
-"" HTML {{{2
-nnoremap <Leader>html :-1read ~/.vim/snips/html/newFile<CR>
 " }}}1
 
