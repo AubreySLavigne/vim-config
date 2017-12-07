@@ -42,6 +42,9 @@ set t_Co=256
 " Shell Configuration {{{2
 set shell=/bin/bash
 
+" ctags Config{{{2
+:set tags=~/.vim/tags
+
 " }}}1
 
 " Plugin Config {{{1
