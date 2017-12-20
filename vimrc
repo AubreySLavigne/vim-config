@@ -174,6 +174,9 @@ nnoremap ,err :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 " Load Templates {{{3
 nnoremap ,snip :tabnew ~/.vim/snips/
 
+" Load Templates {{{3
+nnoremap ,nu :set invnu<CR>
+
 " }}}2
 " Plugins {{{2
 " NERDTree {{{3
@@ -213,7 +216,7 @@ nnoremap ]x :pclose<CR>
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
 nnoremap ,delm 'qd'z
 
-" Git/Fugitive {{{3
+" UltiSnips {{{3
 nnoremap ,U :UltiSnipsEdit<CR>
 
 " }}}2
