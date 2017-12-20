@@ -1,14 +1,16 @@
 
+## Tips:
+ * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
+ * Build fail safes for common typos (Intolerance of Typos)
+ * Commands should focus on repeatability 
+
 ## Useful Commands: 
  * `gi` == resume inserting where you were last editing
  * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `^^` == Go to the previously opened file
- * `gf` == go to file under cursor
- * `J` and `K` == (V-mode) Move Selected Block Up and Down
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
- * `:r ! ls` == Load the output of `ls` (after the bang) into a buffer
  * `{range}=` == (N-mode) retab range
  * `I` and `A` move to the start and end of a line in Insert (good for repeatabilit)
  * `^e` and `^y` == Scroll the window down and up
@@ -155,12 +157,6 @@
    * unimpaired.vim
    * commentary.vim
    * vim-easyclip
- * Look into tmux -- probably better than how I'm handling windows right now
  * Look into https://github.com/adoy/vim-php-refactoring-toolbox (PHP Plugin)
  * Look into [PHP Plugins](https://www.reddit.com/r/PHP/comments/23okor/vim_users_who_code_in_php_what_plugins_do_you_have/)
-
-## Tips:
- * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
- * Build fail safes for common typos (Intolerance of Typos)
- * Commands should focus on repeatability 
 
