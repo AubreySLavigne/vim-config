@@ -15,6 +15,8 @@ filetype plugin indent on
 syntax on
 set hlsearch
 set incsearch
+set foldmethod=indent
+set fml=4
 setlocal foldmethod=marker      " This file only
 
 " Numbering {{{2
