@@ -5,8 +5,8 @@
 " Encoding/Whitespace Options {{{2
 set encoding=utf-8
 set tabstop=4
-set expandtab
 set shiftwidth=4
+set expandtab
 set autoindent
 silent! set nofixeol
 
@@ -16,8 +16,9 @@ syntax on
 set hlsearch
 set incsearch
 set foldmethod=indent
-set fml=4
+set foldminlines=4
 setlocal foldmethod=marker      " This file only
+setlocal foldminlines=2      " This file only
 
 " Numbering {{{2
 set nu
