@@ -61,3 +61,6 @@
 [submodule "bundle/always/ale"]
 	path = bundle/always/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "bundle/always/vim-go"]
+	path = bundle/always/vim-go
+	url = https://github.com/fatih/vim-go
