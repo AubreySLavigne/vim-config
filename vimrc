@@ -86,6 +86,12 @@ let g:ale_linters = {
             \ 'vim' : ['vint'],
             \ 'go' : ['gofmt', 'go build', 'golint', 'go vet'],
             \ }
+let g:ale_fix_on_text_changed = 'never'
+let g:ale_fix_on_enter = 0
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+            \ 'python' : ['isort'],
+            \ }
 let g:ale_python_pylint_options = '--rcfile ' + $HOME + '.pylintrc' + "--init-hook='import sys; sys.path.append(\".\"); sys.path.append(\"+ $PYTHONPATH +\")'"
 let g:ale_echo_msg_format = '[%linter%] %severity% [%code%] %s'
 let g:ale_python_pylint_executable = 'pylint3'
@@ -240,6 +246,10 @@ nnoremap ,U :UltiSnipsEdit<CR>
 
 " }}}2
 " External Programs {{{2
+" Python {{{3
+
+nnoremap !py :!python3<CR>
+
 " Install composer.yml {{{3
 
 nnoremap ,compose :w<CR>:lcd %:p:h<CR>:!composer update<CR>
