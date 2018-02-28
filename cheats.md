@@ -5,14 +5,16 @@
  * Commands should focus on repeatability 
 
 ## Useful Commands: 
+ * `"*dd` == Cut Command into Clipboard Register
+ * `"*p` == Paste Command into Clipboard Register
  * `gi` == resume inserting where you were last editing
- * `g;` == return to last editing location (cycle through)
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `^^` == Go to the previously opened file
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `^e` and `^y` == Scroll the window down and up
  * `:earlier 2m` ==  Go back two minutes (mind blown)
+ * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
 
 ## Tabs:
  * `:0tabnew` == opens new tab in first slot
@@ -31,11 +33,7 @@
  * (None Currently)
 
 ## surround.vim:
- * `cs"'` == change surrounding " to '
  * `cs'<body>` == change surrounding ' to <body></body>
- * `cst'` == change surrouding tags to '
- * `ds'` == remove surrounding '
- * `yssb` == surround current line with braces
 
 ## vim-indent-object:
  * `ai` == indent level, plus line above
@@ -75,8 +73,6 @@
 ## Mappings
 
 ### Load Files
- * `,ch` == Load up Cheat List 
- * `,rc` == Load up vimrc
  * `,ne` == Open NERDTree
  * `,bo` == Navigate to NERDTree and start searching for bookmark
  * `,nd` == Set NERDTree DocRoot bookmark
@@ -107,19 +103,6 @@
  * `,woq` == Go to next index without quotes ('WithOut Quotes')
  * `,[` == Go to next {PLACEHOLDER}
  * `,ff` == Go to next linux-style filepath
-
-### Tab Navigation
- * `,tn` == Go To Next Tab
- * `,tp` == Go To Prev Tab
- * `,tx` == Close the Current tab
- * `,ta` == Open a new tab
- * `,t0` == Go to Tab #1
- * `,t1` == Go to Tab #1
- * `,t2` == Go to Tab #2
- * `,t3` == Go to Tab #3
- * `,t4` == Go to Tab #4
- * `,t5` == Go to Tab #5
- * `,t$` == Go to Last Tab
 
 ### Misc Text Manipulations
  * `,aub` == Insert my name
