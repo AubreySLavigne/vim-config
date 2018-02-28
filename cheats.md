@@ -11,8 +11,6 @@
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `^^` == Go to the previously opened file
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
- * `{range}=` == (N-mode) retab range
- * `I` and `A` move to the start and end of a line in Insert (good for repeatabilit)
  * `^e` and `^y` == Scroll the window down and up
  * `:earlier 2m` ==  Go back two minutes (mind blown)
 

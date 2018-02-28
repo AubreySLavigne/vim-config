@@ -64,3 +64,6 @@
 [submodule "bundle/always/vim-go"]
 	path = bundle/always/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule "bundle/always/YouCompleteMe"]
+	path = bundle/always/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
