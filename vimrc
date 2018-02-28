@@ -104,7 +104,7 @@ let g:ycm_key_list_previous_completion=[]
 " Mappings {{{1
 " Vim Config files {{{2
 nnoremap ,ch :vs ~/.vim/cheats.md<CR>
-nnoremap ,rc :tabnew ~/.vim/cheats.md<CR>:vs ~/.vim/vimrc<CR>
+nnoremap ,rc :vs ~/.vim/vimrc<CR>
 
 " Vim: Bindings for Defaults {{{2
 " File Save/Edit {{{3
