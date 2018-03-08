@@ -99,6 +99,7 @@ let g:ale_python_pylint_executable = 'pylint3'
 " Make YCM not use the tab key
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+
 " }}}1
 
 " Mappings {{{1
@@ -122,25 +123,12 @@ noremap za :qa!<CR>
 vnoremap za <C-C>:qa!<CR>
 
 " Fast File Save {{{3
-nnoremap ,w :w<CR>
+" Also Closes Preview Window
+nnoremap ,w :w<CR>:pc<CR>
 
 " Folding Shortcuts {{{3
 " Toggle Current Fold
 nnoremap <space> za  
-
-" Tab Navigation {{{3
-nnoremap ,ta :tabnew<CR>
-nnoremap ,tx :tabclose!<CR>
-
-nnoremap ,tn :tabn<CR>
-nnoremap ,tp :tabp<CR>
-nnoremap ,t0 :tabfirst<CR>
-nnoremap ,t1 :tabfirst<CR>
-nnoremap ,t2 :tabfirst<CR>:tabn<CR>
-nnoremap ,t3 :tabfirst<CR>:tabn<CR>:tabn<CR>
-nnoremap ,t4 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>
-nnoremap ,t5 :tabfirst<CR>:tabn<CR>:tabn<CR>:tabn<CR>:tabn<CR>
-nnoremap ,t$ :tablast<CR>
 
 " }}}2
 " Vim: Improvments to Defaults {{{2
@@ -161,8 +149,8 @@ noremap ,pc :pc<CR>
 " }}}2
 " Vim: Complex Actions {{{2
 " Break this line at column 80, 120 {{{3
-nnoremap ,80 80\|T i 
-nnoremap ,120 120\|T i 
+nnoremap ,80 80\|Bik:s/\s*$//g<CR>j:noh<CR>
+nnoremap ,120 120\|T i k:s/\s*$//g<CR>j:noh<CR>
 
 " Swap two elements in a tuple (any brace) {{{3
 " Undefined behavior if not a tuple
