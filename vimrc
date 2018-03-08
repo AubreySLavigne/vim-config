@@ -95,6 +95,11 @@ let g:ale_fixers = {
 let g:ale_python_pylint_options = '--rcfile ' + $HOME + '.pylintrc' + "--init-hook='import sys; sys.path.append(\".\"); sys.path.append(\"+ $PYTHONPATH +\")'"
 let g:ale_echo_msg_format = '[%linter%] %severity% [%code%] %s'
 let g:ale_python_pylint_executable = 'pylint3'
+
+" vim-go {{{2
+" Use goimports, rather than go-fmt
+let g:go_fmt_command = 'goimports'
+
 " YouCompleteMe {{{2
 " Make YCM not use the tab key
 let g:ycm_key_list_select_completion=[]
