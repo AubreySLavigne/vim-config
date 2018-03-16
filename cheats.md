@@ -5,16 +5,17 @@
  * Commands should focus on repeatability 
 
 ## Useful Commands: 
+ * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
+ * `^^` == Go to the previously opened file
+ * `^e` and `^y` == Scroll the window down and up
+
  * `"*dd` == Cut Command into Clipboard Register
  * `"*p` == Paste Command into Clipboard Register
  * `gi` == resume inserting where you were last editing
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
- * `^^` == Go to the previously opened file
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
- * `^e` and `^y` == Scroll the window down and up
  * `:earlier 2m` ==  Go back two minutes (mind blown)
- * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
 
 ## Tabs:
  * `:0tabnew` == opens new tab in first slot

@@ -21,7 +21,7 @@ setlocal foldmethod=marker      " This file only
 setlocal foldminlines=2      " This file only
 
 " Numbering {{{2
-set nu
+set number
 
 " Status Line Comments {{{2
 set showcmd
@@ -57,7 +57,7 @@ autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | 
 
 " NERDTree config {{{2
 let g:nerdtree_tabs_open_on_console_startup=1
-let NERDTreeShowBookmarks=1
+let g:NERDTreeShowBookmarks=1
 
 " vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
@@ -66,12 +66,12 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
 
 set runtimepath+=~/.ultisnips
 
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-Z>"
+let g:UltiSnipsExpandTrigger='<Tab>'
+let g:UltiSnipsJumpForwardTrigger='<Tab>'
+let g:UltiSnipsJumpBackwardTrigger='<c-Z>'
 
 let g:UltiSnipsEditSplit='vertical'
-let g:UltiSnipsSnippetsDir="~/.ultisnips/UltiSnips"
+let g:UltiSnipsSnippetsDir='~/.ultisnips/UltiSnips'
 
 " Automatic Linting Enging (ALE) config {{{2
 let g:ale_enabled = 1
