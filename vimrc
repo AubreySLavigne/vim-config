@@ -41,7 +41,11 @@ highlight Search ctermbg=018
 highlight ALEWarning ctermbg=053
 
 " Shell Configuration {{{2
-set shell=/bin/bash
+if executable('zsh')
+    set shell=zsh
+else
+    set shell=bash
+endif
 
 " ctags Config{{{2
 :set tags=~/.vim/tags
