@@ -241,7 +241,7 @@ nnoremap ,U :UltiSnipsEdit<CR>
 " External Programs {{{2
 " Python {{{3
 
-nnoremap !py :!python3<CR>
+nnoremap !py :terminal<CR>python3<CR>
 
 " Install composer.yml {{{3
 
