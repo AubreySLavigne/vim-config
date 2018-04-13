@@ -143,8 +143,6 @@ nnoremap ,O Oj
 " Change to use Blackhole registers
 nnoremap x "_x
 nnoremap X "_X
-nnoremap c "_c
-nnoremap C "_C
 
 " Close Preview Window {{{3
 noremap ,pc :pc<CR>
