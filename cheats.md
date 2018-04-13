@@ -8,6 +8,7 @@
  * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
  * `^^` == Go to the previously opened file
  * `^e` and `^y` == Scroll the window down and up
+ * `:%s//New String/` == Run replace on the last search
 
  * `"*dd` == Cut Command into Clipboard Register
  * `"*p` == Paste Command into Clipboard Register
@@ -16,6 +17,7 @@
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
  * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `:earlier 2m` ==  Go back two minutes (mind blown)
+ * `c^w_` == set size of horizontal split
 
 ## Tabs:
  * `:0tabnew` == opens new tab in first slot
