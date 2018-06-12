@@ -38,6 +38,11 @@
 ## surround.vim:
  * `cs'<body>` == change surrounding ' to <body></body>
 
+## vim-commentary
+ * `gc<direction>` == Comment that line with appropriate comment type
+ * `gcc` == Comment Current Line
+ * `gcap` == Comment Current paragraph text object
+
 ## vim-indent-object:
  * `ai` == indent level, plus line above
  * `ii` == indent level only
