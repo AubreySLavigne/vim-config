@@ -5,8 +5,9 @@
  * Commands should focus on repeatability 
 
 ## Useful Commands: 
- * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
  * `^^` == Go to the previously opened file
+ * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
+ * `gc<direction>` == Comment that line with appropriate comment type
  * `^e` and `^y` == Scroll the window down and up
  * `:%s//New String/` == Run replace on the last search
 
@@ -15,7 +16,7 @@
  * `gi` == resume inserting where you were last editing
  * `^r^rs` == insert the content of the 's' register
  * `^r0` (zero) == reload current file -- good for reloading vimrc changes
- * `H`, `K`, `L` == Move cursor to Top, Mid, Bottom of current display
+ * `H`, `M`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `:earlier 2m` ==  Go back two minutes (mind blown)
  * `c^w_` == set size of horizontal split
 
