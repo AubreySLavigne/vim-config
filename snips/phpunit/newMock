@@ -1,7 +1,0 @@
-        {MOCKVAR} = $this->getMockBuilder('{CLASSNAME}')
-            ->setMethods(['{MOCKEDMETHOD}'])
-            ->getMock();
-        {MOCKVAR}->expects($this->once())
-            ->method('{MOCKEDMETHOD}')
-            ;
-
