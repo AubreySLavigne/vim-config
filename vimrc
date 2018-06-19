@@ -75,6 +75,7 @@ Plugin 'tpope/vim-commentary'
 
 " Git Integrations
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " }}}3
 
 " Restore settings for vundle
