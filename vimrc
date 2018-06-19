@@ -65,7 +65,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'w0rp/ale'
 
+" Text objects
 Plugin 'kana/vim-textobj-line'
+Plugin 'vim-scripts/argtextobj.vim'
 " }}}3
 
 " Restore settings for vundle
