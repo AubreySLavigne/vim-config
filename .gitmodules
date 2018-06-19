@@ -34,9 +34,6 @@
 [submodule "bundle/always/ctrlp.vim"]
 	path = bundle/always/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "bundle/always/ultisnips"]
-	path = bundle/always/ultisnips
-	url = https://github.com/SirVer/ultisnips
 [submodule "bundle/always/YouCompleteMe"]
 	path = bundle/always/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
