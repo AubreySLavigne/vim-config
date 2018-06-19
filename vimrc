@@ -69,6 +69,9 @@ Plugin 'w0rp/ale'
 Plugin 'kana/vim-textobj-line'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vim-scripts/argtextobj.vim'
+
+" Better Comments
+Plugin 'tpope/vim-commentary'
 " }}}3
 
 " Restore settings for vundle
