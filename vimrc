@@ -63,7 +63,9 @@ call vundle#begin()
 " Vundle Plugins {{{3
 Plugin 'VundleVim/Vundle.vim'
 
+" Linting and Signs in margin
 Plugin 'w0rp/ale'
+Plugin 'kshenoy/vim-signature'
 
 " Text objects
 Plugin 'kana/vim-textobj-line'
