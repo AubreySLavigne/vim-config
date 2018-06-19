@@ -4,6 +4,9 @@
  * Build fail safes for common typos (Intolerance of Typos)
  * Commands should focus on repeatability 
 
+## At the command line:
+ * `vim +PluginInstall +qall` == Install Vundle Plugins
+
 ## Useful Commands: 
  * `^^` == Go to the previously opened file
  * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
