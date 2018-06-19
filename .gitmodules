@@ -16,9 +16,6 @@
 [submodule "bundle/always/vim-pasta"]
 	path = bundle/always/vim-pasta
 	url = https://github.com/deris/vim-pasta
-[submodule "bundle/always/vim-repeat"]
-	path = bundle/always/vim-repeat
-	url = https://github.com/tpope/vim-repeat
 [submodule "bundle/always/ctrlp.vim"]
 	path = bundle/always/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim

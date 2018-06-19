@@ -84,6 +84,9 @@ Plugin 'SirVer/ultisnips'
 
 " File Navigation
 Plugin 'scrooloose/nerdtree'
+
+" Expand Repeat functionality (.)
+Plugin 'tpope/vim-repeat'
 " }}}3
 
 " Restore settings for vundle
