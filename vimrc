@@ -64,6 +64,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'w0rp/ale'
+
+Plugin 'kana/vim-textobj-line'
 " }}}3
 
 " Restore settings for vundle
