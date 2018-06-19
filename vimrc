@@ -53,7 +53,22 @@ endif
 " }}}1
 
 " Plugin Config {{{1
-" Load Plugins {{{2
+" Load Vundle {{{2
+
+" Vundle requires the following
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Vundle Plugins {{{3
+Plugin 'VundleVim/Vundle.vim'
+" }}}3
+
+" Restore settings for vundle
+call vundle#end()  
+filetype plugin indent on
+
+" Load Pathogen {{{2
 execute pathogen#infect('bundle/always/{}')
 autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
 
