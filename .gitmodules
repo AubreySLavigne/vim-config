@@ -67,3 +67,6 @@
 [submodule "bundle/always/vim-commentary"]
 	path = bundle/always/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "/home/alavigne/.vim/bundle/Vundle.vim"]
+	path = /home/alavigne/.vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
