@@ -72,6 +72,9 @@ Plugin 'vim-scripts/argtextobj.vim'
 
 " Better Comments
 Plugin 'tpope/vim-commentary'
+
+" Git Integrations
+Plugin 'tpope/vim-fugitive'
 " }}}3
 
 " Restore settings for vundle

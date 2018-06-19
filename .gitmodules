@@ -10,9 +10,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/always/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/vim-fugitive"]
-	path = bundle/always/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
 [submodule "bundle/vim-textobj-space"]
 	path = bundle/always/vim-textobj-space
 	url = https://github.com/saihoooooooo/vim-textobj-space
