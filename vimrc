@@ -67,6 +67,7 @@ Plugin 'w0rp/ale'
 
 " Text objects
 Plugin 'kana/vim-textobj-line'
+Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vim-scripts/argtextobj.vim'
 " }}}3
 
