@@ -62,6 +62,8 @@ call vundle#begin()
 
 " Vundle Plugins {{{3
 Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'w0rp/ale'
 " }}}3
 
 " Restore settings for vundle

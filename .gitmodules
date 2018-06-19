@@ -58,9 +58,6 @@
 [submodule "bundle/always/ultisnips"]
 	path = bundle/always/ultisnips
 	url = https://github.com/SirVer/ultisnips
-[submodule "bundle/always/ale"]
-	path = bundle/always/ale
-	url = https://github.com/w0rp/ale.git
 [submodule "bundle/always/YouCompleteMe"]
 	path = bundle/always/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
