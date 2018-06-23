@@ -87,11 +87,15 @@ Plugin 'scrooloose/nerdtree'
 
 " Expand Repeat functionality (.)
 Plugin 'tpope/vim-repeat'
-" }}}3
+
+" Fix Indenting
+Plugin 'sickill/vim-pasta'
 
 " Restore settings for vundle
 call vundle#end()  
 filetype plugin indent on
+
+" }}}3
 
 " Load Pathogen {{{2
 execute pathogen#infect('bundle/always/{}')

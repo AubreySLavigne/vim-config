@@ -13,9 +13,6 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/always/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs
-[submodule "bundle/always/vim-pasta"]
-	path = bundle/always/vim-pasta
-	url = https://github.com/deris/vim-pasta
 [submodule "bundle/always/ctrlp.vim"]
 	path = bundle/always/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
