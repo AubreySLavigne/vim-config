@@ -25,6 +25,3 @@
 [submodule "bundle/py/pydoc.vim"]
 	path = bundle/py/pydoc.vim
 	url = https://github.com/fs111/pydoc.vim
-[submodule "/home/alavigne/.vim/bundle/Vundle.vim"]
-	path = /home/alavigne/.vim/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
