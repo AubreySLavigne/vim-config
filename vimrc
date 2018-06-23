@@ -137,6 +137,7 @@ let g:ale_fix_on_enter = 0
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
             \ 'python' : ['isort'],
+            \ 'go' : ['gofmt'],
             \ }
 let g:ale_python_pylint_options = '--rcfile ' + $HOME + '.pylintrc' + "--init-hook='import sys; sys.path.append(\".\"); sys.path.append(\"+ $PYTHONPATH +\")'"
 let g:ale_echo_msg_format = '[%linter%] %severity% [%code%] %s'
