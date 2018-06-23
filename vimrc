@@ -68,6 +68,7 @@ Plugin 'w0rp/ale'
 Plugin 'kshenoy/vim-signature'
 
 " Text objects
+Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vim-scripts/argtextobj.vim'
