@@ -96,6 +96,9 @@ Plugin 'tpope/vim-repeat'
 " Fix Indenting
 Plugin 'sickill/vim-pasta'
 
+" Python Integrations
+Plugin 'fs111/pydoc.vim'
+
 " Restore settings for vundle
 call vundle#end()  
 filetype plugin indent on
