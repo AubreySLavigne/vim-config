@@ -9,8 +9,6 @@
 
 ## Useful Commands: 
  * `^^` == Go to the previously opened file
- * `:v/keep-me/d` == Delete all lines that do not have 'keep-me'
- * `gc<direction>` == Comment that line with appropriate comment type
  * `^e` and `^y` == Scroll the window down and up
  * `:%s//New String/` == Run replace on the last search
 
@@ -22,13 +20,6 @@
  * `H`, `M`, `L` == Move cursor to Top, Mid, Bottom of current display
  * `:earlier 2m` ==  Go back two minutes (mind blown)
  * `c^w_` == set size of horizontal split
-
-## Tabs:
- * `:0tabnew` == opens new tab in first slot
- * `:$tabnew` == opens new tab in last slot
- * `:tabclose` == closes current tab`
- * `:+tabmove` == move tab to the right
- * `:-tabmove` == move tab to the last
 
 ## Folding:
  * `zF` == create fold
@@ -48,16 +39,13 @@
  * `gcap` == Comment Current paragraph text object
 
 ## vim-indent-object:
- * `ai` == indent level, plus line above
- * `ii` == indent level only
- * `aI` == indent level, plus line above and below
- * `iI` == indent level only (same as `ii`)
+ * (None Currently)
 
 ## argtextobj.vim
- * `aa` == argument including comma
- * `ia` == argument only
+ * (None Currently)
 
 ## NERDTree
+ * `I` (in NERDTree) == Display hidden files
  * `o` (in NERDTree) == Opens selected dir/file
  * `cd` (in NERDTree) == Current Directory is the NEW pwd
  * `CD` (in NERDTree) == Changes the current directory to Current Directory
@@ -76,10 +64,6 @@
  * `iS` == any mixed spaces
 
 ## vim-gitgutter
- * `]c` and `]c` == Jump to next and previous git changes
- * `<Leader>hu` == Undo selected change
- * `<Leader>hs` == Stage selected change
- * `<Leader>hp` == Preview selected change
  * `ic` and `ac` == Text Objects for selected Change
 
 ## Mappings
@@ -92,22 +76,14 @@
  * `,errl` == Load PHP Error Log (last 100 lines)
 
 ### Exit/Save Files
- * `zz` == ([NV]-mode) Save and exit file
- * `zx` == ([NV]-mode) Exit File Without Saving
- * `za` == ([NV]-mode) Exit All Files Without Saving
- * `,w` == Save Current File
  * `,pc` == Close Preview Window
 
 ### Git Bindings
- * `,ga` == git add 
  * `,gs` == git status
- * `,gc` == git commit
  * `,gp` == git push
 
 ### External Programs
- * `,phinx` == Load Incomplete Phinx Command
- * `,phm` == Change New Phinx file
- * `,compose` == Install composer 
+ * (None Currently)
 
 ### Page Navigation
  * `,mark` == Set up Marks for Merging Conflicts
@@ -125,31 +101,42 @@
  * `,k` and `,K` == Toggle Checkbox ([ ]) in Markdown file
 
 ## Notes and Wishlist: 
- * Find Better Alternatives to ctags
- * Figure out how to use Vim's Autocompletion   
- *  `^x` == search
- *  `^n` == autocomplete
- * Run commands through Vim
- * PHP Tools
-   * Codesniffer
-   * Mess detector
-   * PHP Documentor (https://github.com/tobyS/pdv)
- * HTML Validator
- * goto keyword definition
- * fuzzy file search
- * Snippets
- * Set different text color after column 80
- * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
- * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
- * Plugin called Command-T? ctrlp?
- * Read "Learning Vimscript the Hard Way"
- * Watch videos on cvimcasts.org
+
+### Interesting Plugins
  * Look into other vim-repeat projects:
    * speeddating.vim
    * abolish.vim
    * unimpaired.vim
    * commentary.vim
    * vim-easyclip
+ * vim-multiple-cursors
+ * vim-eunich
+ * fzf
+ * Editor Config
+
+### Recommended Reading
+ * Read "Learning Vimscript the Hard Way"
+ * Dive Into [Vim Help: Motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
+ * Watch videos on cvimcasts.org
+
+### PHP Workflow (low priority)
+ * PHP Tools
+   * Codesniffer
+   * Mess detector
+   * PHP Documentor (https://github.com/tobyS/pdv)
  * Look into https://github.com/adoy/vim-php-refactoring-toolbox (PHP Plugin)
+
+### To Do
+ * Learn fzf
+ * Improve my library of snippets
+ * Integration of language servers (such as pyls) with YouCompleteMe
+ * Shortcut for ALEGoToDefinition
+ * Figure out how to use Vim's Autocompletion
+   * `^x` == search
+ * Set different text color after column 80
+
+### For Inspiration
+ * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
  * Look into [PHP Plugins](https://www.reddit.com/r/PHP/comments/23okor/vim_users_who_code_in_php_what_plugins_do_you_have/)
+
 
