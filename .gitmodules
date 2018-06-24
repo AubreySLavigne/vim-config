@@ -10,9 +10,6 @@
 [submodule "bundle/always/ctrlp.vim"]
 	path = bundle/always/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "bundle/always/YouCompleteMe"]
-	path = bundle/always/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe
 [submodule "bundle/py/pydoc.vim"]
 	path = bundle/py/pydoc.vim
 	url = https://github.com/fs111/pydoc.vim

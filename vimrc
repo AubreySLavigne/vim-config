@@ -67,6 +67,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'w0rp/ale'
 Plugin 'kshenoy/vim-signature'
 
+" Auto Complete
+Plugin 'Valloric/YouCompleteMe'
+
 " Text objects
 Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
