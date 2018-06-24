@@ -4,6 +4,7 @@
 " Settings {{{1
 " Encoding/Whitespace Options {{{2
 set encoding=utf-8
+scriptencoding utf-8
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -57,7 +58,7 @@ endif
 
 " Vundle requires the following
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Vundle Plugins {{{3
