@@ -106,10 +106,6 @@ filetype plugin indent on
 
 " }}}3
 
-" Load Pathogen {{{2
-execute pathogen#infect('bundle/always/{}')
-autocmd FileType * if &ft != '' && isdirectory($HOME . '/.vim/bundle/' . &ft) | execute pathogen#infect('bundle/' . &ft. '/{}') | endif
-
 " NERDTree config {{{2
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:NERDTreeShowBookmarks=1
