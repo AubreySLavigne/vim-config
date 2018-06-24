@@ -75,6 +75,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vim-scripts/argtextobj.vim'
+Plugin 'tpope/vim-surround'
 
 " Better Comments
 Plugin 'tpope/vim-commentary'

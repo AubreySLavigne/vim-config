@@ -1,9 +1,6 @@
 [submodule "colors"]
 	path = colors
 	url = https://github.com/vim-scripts/icansee.vim
-[submodule "bundle/vim-surround"]
-	path = bundle/always/vim-surround
-	url = https://github.com/tpope/vim-surround
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/always/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs
