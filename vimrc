@@ -97,8 +97,9 @@ Plugin 'tpope/vim-repeat'
 " Fix Indenting
 Plugin 'sickill/vim-pasta'
 
-" Python Integrations
+" Documentation
 Plugin 'fs111/pydoc.vim'
+Plugin 'vimwiki/vimwiki'
 
 " Restore settings for vundle
 call vundle#end()  
@@ -287,6 +288,8 @@ nnoremap ,delm 'qd'z
 " UltiSnips {{{3
 nnoremap ,U :UltiSnipsEdit<CR>
 
+" vimwiki {{{3
+nnoremap <Leader>w? :help vimwiki-commands<CR>
 " }}}2
 " External Programs {{{2
 " Python {{{3
