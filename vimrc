@@ -88,8 +88,12 @@ Plugin 'airblade/vim-gitgutter'
 " Snippets
 Plugin 'SirVer/ultisnips'
 
-" File Navigation
+" File/Buffer Navigation
 Plugin 'scrooloose/nerdtree'
+if isdirectory($HOME . '/.fzf')
+    set runtimepath+=~/.fzf
+    Plugin 'junegunn/fzf.vim'
+endif
 
 " Expand Repeat functionality (.)
 Plugin 'tpope/vim-repeat'
@@ -258,6 +262,10 @@ nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
 
 " Set NERDTree DocRoot
 nnoremap ,nd :Bookmark DocRoot<CR>
+
+" Fzf {{{3
+"" Open file search
+nnoremap <Leader>b Files<CR>
 
 " ctags {{{3
 
