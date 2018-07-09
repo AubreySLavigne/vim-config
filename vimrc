@@ -192,6 +192,9 @@ nnoremap ,w :w<CR>:pc<CR>
 " Folding Shortcuts {{{3
 " Toggle Current Fold
 nnoremap <space> za  
+"
+" Show buffers list {{{3
+nnoremap <Leader>b :buffers<CR>
 
 " }}}2
 " Vim: Improvments to Defaults {{{2
@@ -266,7 +269,7 @@ nnoremap ,nd :Bookmark DocRoot<CR>
 
 " Fzf {{{3
 "" Open file search
-nnoremap <Leader>b Files<CR>
+nnoremap <Leader>f Files<CR>
 
 " ctags {{{3
 
@@ -300,6 +303,7 @@ nnoremap ,U :UltiSnipsEdit<CR>
 " vimwiki {{{3
 nnoremap <Leader>w? :help vimwiki-commands<CR>
 " }}}2
+
 " External Programs {{{2
 " Python {{{3
 
