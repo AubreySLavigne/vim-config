@@ -100,6 +100,7 @@ Plugin 'tpope/vim-repeat'
 
 " Fix Indenting
 Plugin 'sickill/vim-pasta'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 " Documentation
 Plugin 'fs111/pydoc.vim'

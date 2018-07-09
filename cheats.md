@@ -30,6 +30,9 @@
 ## Text Objects:
  * (None Currently)
 
+## Fzf
+ * `<Leader>b`
+
 ## surround.vim:
  * `cs'<body>` == change surrounding ' to <body></body>
 
