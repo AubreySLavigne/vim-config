@@ -21,6 +21,9 @@ set foldminlines=4
 setlocal foldmethod=marker      " This file only
 setlocal foldminlines=2      " This file only
 
+" Set filetype for Non-Standard Dockefiles (e.g. Dockerfile.bak)
+autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
+
 " Numbering {{{2
 set number
 
