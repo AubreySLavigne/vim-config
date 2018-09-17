@@ -107,7 +107,7 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 
 " Documentation
 Plugin 'fs111/pydoc.vim'
-Plugin 'vimwiki/vimwiki'
+source ~/.vim/pluginrc/vimwiki.vim
 
 " Restore settings for vundle
 call vundle#end()  
@@ -303,8 +303,6 @@ nnoremap ,delm 'qd'z
 " UltiSnips {{{3
 nnoremap ,U :UltiSnipsEdit<CR>
 
-" vimwiki {{{3
-nnoremap <Leader>w? :help vimwiki-commands<CR>
 " }}}2
 
 " External Programs {{{2
