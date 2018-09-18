@@ -68,7 +68,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Linting and Signs in margin
-Plugin 'w0rp/ale'
+source ~/.vim/pluginrc/ale.vim
 Plugin 'kshenoy/vim-signature'
 
 " Auto Complete
@@ -133,31 +133,7 @@ let g:UltiSnipsJumpBackwardTrigger='<c-Z>'
 let g:UltiSnipsEditSplit='vertical'
 let g:UltiSnipsSnippetsDir='~/.ultisnips/UltiSnips'
 
-" Automatic Linting Enging (ALE) config {{{2
-let g:ale_enabled = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_save = 1
-let g:ale_linters = {
-            \ 'php' : ['php'],
-            \ 'python' : ['pylint', 'pyls'],
-            \ 'dockerfile' : ['hadolint'],
-            \ 'bash' : ['shellcheck'],
-            \ 'vim' : ['vint'],
-            \ 'go' : ['gofmt', 'go build', 'golint', 'go vet'],
-            \ }
-let g:ale_fix_on_text_changed = 'never'
-let g:ale_fix_on_enter = 0
-let g:ale_fix_on_save = 1
-let g:ale_fixers = {
-            \ 'python' : ['isort'],
-            \ 'go' : ['gofmt'],
-            \ }
-let g:ale_python_pylint_options = '--rcfile ' + $HOME + '.pylintrc' + "--init-hook='import sys; sys.path.append(\".\"); sys.path.append(\"+ $PYTHONPATH +\")'"
-let g:ale_echo_msg_format = '[%linter%] %severity% [%code%] %s'
-let g:ale_python_pylint_executable = 'pylint3'
-
-" vim-go {{{2
+" Google Go {{{2
 " Use goimports, rather than go-fmt
 let g:go_fmt_command = 'goimports'
 
