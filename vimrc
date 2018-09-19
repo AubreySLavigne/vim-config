@@ -92,7 +92,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'SirVer/ultisnips'
 
 " File/Buffer Navigation
-Plugin 'scrooloose/nerdtree'
+source ~/.vim/pluginrc/nerdtree.vim
 if isdirectory($HOME . '/.fzf')
     set runtimepath+=~/.fzf
     Plugin 'junegunn/fzf.vim'
@@ -114,10 +114,6 @@ call vundle#end()
 filetype plugin indent on
 
 " }}}3
-
-" NERDTree config {{{2
-let g:nerdtree_tabs_open_on_console_startup=1
-let g:NERDTreeShowBookmarks=1
 
 " vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
@@ -235,17 +231,6 @@ nnoremap ,nu :set invnu<CR>
 
 " }}}2
 " Plugins {{{2
-" NERDTree {{{3
-
-" Open NERDTree
-nnoremap ,ne :NERDTreeToggle<CR>
-
-" GoTo bookmark (keep typing)
-nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
-
-" Set NERDTree DocRoot
-nnoremap ,nd :Bookmark DocRoot<CR>
-
 " Fzf {{{3
 "" Open file search
 nnoremap <Leader>f Files<CR>
