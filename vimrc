@@ -89,7 +89,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " Snippets
-Plugin 'SirVer/ultisnips'
+source ~/.vim/pluginrc/ultisnips.vim
 
 " File/Buffer Navigation
 source ~/.vim/pluginrc/nerdtree.vim
@@ -118,23 +118,12 @@ filetype plugin indent on
 " vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
 
-" vim-ultisnips config {{{2
-
-set runtimepath+=~/.ultisnips
-
-let g:UltiSnipsExpandTrigger='<Tab>'
-let g:UltiSnipsJumpForwardTrigger='<Tab>'
-let g:UltiSnipsJumpBackwardTrigger='<c-Z>'
-
-let g:UltiSnipsEditSplit='vertical'
-let g:UltiSnipsSnippetsDir='~/.ultisnips/UltiSnips'
-
 " Google Go {{{2
 " Use goimports, rather than go-fmt
 let g:go_fmt_command = 'goimports'
 
 " YouCompleteMe {{{2
-" Make YCM not use the tab key
+" Make YCM not use the tab key. This is for compatibility with Ultisnips
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
@@ -224,9 +213,6 @@ nnoremap ,woq /\[[A-Za-z][A-Za-z0-9_]\+\]<CR>l
 nnoremap ,err :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
 
 " Load Templates {{{3
-nnoremap ,snip :tabnew ~/.vim/snips/
-
-" Load Templates {{{3
 nnoremap ,nu :set invnu<CR>
 
 " }}}2
@@ -261,8 +247,6 @@ nnoremap ]x :pclose<CR>
 nnoremap ,mark /<<<<mq/====ma/>>>>mz
 nnoremap ,delm 'qd'z
 
-" UltiSnips {{{3
-nnoremap ,U :UltiSnipsEdit<CR>
 
 " }}}2
 
