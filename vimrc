@@ -85,7 +85,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
 " Git Integrations
-Plugin 'tpope/vim-fugitive'
+source ~/.vim/pluginrc/fugitive.vim
 Plugin 'airblade/vim-gitgutter'
 
 " Snippets
@@ -225,27 +225,6 @@ nnoremap <Leader>f Files<CR>
 
 " Run ctags in background
 nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
-
-" Git/Fugitive {{{3
-
-" Git Add
-nnoremap ,ga :Gwrite<CR>
-
-" Git Status
-nnoremap ,gs :Gstatus<CR>
-
-" Git Commit
-nnoremap ,gc :Gcommit<CR>
-
-" Git Push
-nnoremap ,gp :Gpush<CR>
-
-" Close Preview Window (after `\hp`)
-nnoremap ]x :pclose<CR>
-
-" Set up Marks for resolving conflicts
-nnoremap ,mark /<<<<mq/====ma/>>>>mz
-nnoremap ,delm 'qd'z
 
 
 " }}}2
