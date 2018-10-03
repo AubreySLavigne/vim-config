@@ -93,10 +93,7 @@ source ~/.vim/pluginrc/ultisnips.vim
 
 " File/Buffer Navigation
 source ~/.vim/pluginrc/nerdtree.vim
-if isdirectory($HOME . '/.fzf')
-    set runtimepath+=~/.fzf
-    Plugin 'junegunn/fzf.vim'
-endif
+source ~/.vim/pluginrc/fzf.vim
 
 " Expand Repeat functionality (.)
 Plugin 'tpope/vim-repeat'
@@ -217,9 +214,6 @@ nnoremap ,nu :set invnu<CR>
 
 " }}}2
 " Plugins {{{2
-" Fzf {{{3
-"" Open file search
-nnoremap <Leader>f Files<CR>
 
 " ctags {{{3
 
