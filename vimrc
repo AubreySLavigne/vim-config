@@ -132,19 +132,6 @@ nnoremap ,ch :vs ~/.vim/cheats.md<CR>
 nnoremap ,rc :vs ~/.vim/vimrc<CR>
 
 " Vim: Bindings for Defaults {{{2
-" File Save/Edit {{{3
-
-" Save and Exit the File
-noremap zz :x<CR>
-vnoremap zz <C-C>:x<CR>
-
-" Exit without Saving
-noremap zx :q!<CR>
-vnoremap zx <C-C>:q!<CR>
-
-" Exit all Files
-noremap za :qa!<CR>
-vnoremap za <C-C>:qa!<CR>
 
 " Fast File Save {{{3
 " Also Closes Preview Window
@@ -153,7 +140,7 @@ nnoremap ,w :w<CR>:pc<CR>
 " Folding Shortcuts {{{3
 " Toggle Current Fold
 nnoremap <space> za  
-"
+
 " Show buffers list {{{3
 nnoremap <Leader>b :buffers<CR>
 
@@ -177,34 +164,9 @@ noremap ,pc :pc<CR>
 nnoremap ,80 80\|Bik:s/\s*$//g<CR>j:noh<CR>
 nnoremap ,120 120\|T i k:s/\s*$//g<CR>j:noh<CR>
 
-" Swap two elements in a tuple (any brace) {{{3
-" Undefined behavior if not a tuple
-" [abc, def] => [def, abc]
-nnoremap ,sw yijdt,/[])}]i, p?[[({]ldw
-
-" Move visual block {{{3
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-
-" Insert Author Tag {{{3
-nnoremap ,aub iAubrey Lavigne
-
-" Post the currently yanked word, and prepend to word {{{3
-nnoremap ,pb viS"_c  PBi
-
-" Toggle Markdown checkboxes {{{3
-nnoremap ,k :s/\[ ]/[x]/<CR>
-nnoremap ,K :s/\[x]/[ ]/<CR>
-
 " Search current file {{{3
 " GoTo Next filepath
 nnoremap ,ff /\(\/[A-Za-z_.]*\)\+<CR>
-
-" GoTo Next {VARFIELD}
-nnoremap ,[ /{[A-Z]*}<CR>
-
-" GoTo next index that does not have quotes
-nnoremap ,woq /\[[A-Za-z][A-Za-z0-9_]\+\]<CR>l
 
 " Load Error File into a buffer {{{3
 nnoremap ,err :tabnew<CR>:-1read !tail -n 100 /var/log/php/errors.log<CR>
