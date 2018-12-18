@@ -26,7 +26,7 @@ let g:ale_linters = {
             \ 'dockerfile' : ['hadolint'],
             \ 'bash' : ['shellcheck'],
             \ 'vim' : ['vint'],
-            \ 'go' : ['gofmt', 'go build', 'golint', 'go vet'],
+            \ 'go' : ['gofmt', 'go build', 'golint', 'go vet', 'go-langserver'],
             \ }
 let g:ale_fixers = {
             \ 'python' : ['isort'],
