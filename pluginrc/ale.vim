@@ -22,16 +22,17 @@ let g:ale_echo_msg_format = '[%linter%] %severity% [%code%] %s'
 
 "" Enable Linters/Fixers
 let g:ale_linters = {
-            \ 'php' : ['php'],
-            \ 'python' : ['pylint', 'pyls'],
-            \ 'dockerfile' : ['hadolint'],
             \ 'bash' : ['shellcheck'],
+            \ 'dockerfile' : ['hadolint'],
+            \ 'go' : ['gofmt', 'go build', 'golint', 'go vet', 'golangserver'],
+            \ 'php' : ['php', 'phpcs'],
+            \ 'python' : ['pylint', 'pyls'],
+            \ 'terraform' : ['tflint'],
             \ 'vim' : ['vint'],
-            \ 'go' : ['gofmt', 'go build', 'golint', 'go vet', 'go-langserver'],
             \ }
 let g:ale_fixers = {
-            \ 'python' : ['isort'],
             \ 'go' : ['gofmt', 'goimports'],
+            \ 'python' : ['isort'],
             \ }
 
 
