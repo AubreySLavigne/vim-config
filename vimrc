@@ -72,7 +72,7 @@ source ~/.vim/pluginrc/ale.vim
 Plugin 'kshenoy/vim-signature'
 
 " Auto Complete
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'zxqfl/tabnine-vim'
 
 " Text objects
 Plugin 'kana/vim-textobj-user'
@@ -118,11 +118,6 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
 " Google Go {{{2
 " Use goimports, rather than go-fmt
 let g:go_fmt_command = 'goimports'
-
-" YouCompleteMe {{{2
-" Make YCM not use the tab key. This is for compatibility with Ultisnips
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
 
 " }}}1
 
