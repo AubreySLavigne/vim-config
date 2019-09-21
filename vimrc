@@ -177,6 +177,11 @@ nnoremap ,nu :set invnu<CR>
 " Run ctags in background
 nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
 
+" vim-commentary {{{3
+
+" Add Terraform file support
+autocmd FileType tf setlocal commentstring=#\ %s
+
 
 " }}}2
 
