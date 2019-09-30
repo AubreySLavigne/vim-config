@@ -106,6 +106,9 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'fs111/pydoc.vim'
 source ~/.vim/pluginrc/vimwiki.vim
 
+" Support for Terraform
+Plugin 'hashivim/vim-terraform'
+
 " Restore settings for vundle
 call vundle#end()  
 filetype plugin indent on
