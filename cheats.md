@@ -33,6 +33,17 @@
 * `zd` == delete fold at the cursor
 * `:{range}fo` == create fold for range
 
+### Disable Indenting
+
+```bash
+:setlocal noautoindent
+:setlocal nocindent
+:setlocal nosmartindent
+:setlocal indentexpr=
+```
+
+TODO: Create a mapping for the above
+
 ## Plugins
 
 ### Fzf
