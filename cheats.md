@@ -1,5 +1,7 @@
 
-# Tips
+# Vim Cheat Sheet
+
+## Tips
 
 * Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
 * Build fail safes for common typos (Intolerance of Typos)
@@ -9,7 +11,9 @@
 
 * `vim +PluginInstall +qall` == Install Vundle Plugins
 
-## Useful Commands
+## Built into VIM
+
+### Useful Commands
 
 * `^^` (that is, `ctrl-^`) == Go to the previously opened file
 * `^e` and `^y` == Scroll the window down and up
@@ -22,36 +26,18 @@
 * `:earlier 2m` ==  Go back two minutes (mind blown)
 * `c^w_` == set size of horizontal split
 
-## Folding
+### Folding
 
 * `zF` == create fold
 * `zc` == close current fold
 * `zd` == delete fold at the cursor
 * `:{range}fo` == create fold for range
 
-## Text Objects
+## Plugins
 
-* (None Currently)
-
-## Fzf
+### Fzf
 
 * `<Leader>b`
-
-## surround.vim
-
-* (None Currently)
-
-## vim-commentary
-
-* (None Currently)
-
-## vim-indent-object
-
-* (None Currently)
-
-## argtextobj.vim
-
-* (None Currently)
 
 ## NERDTree
 
@@ -87,17 +73,9 @@
 * `,bo` == Navigate to NERDTree and start searching for bookmark
 * `,nd` == Set NERDTree DocRoot bookmark
 
-### Exit/Save Files
-
-* (None Currently)
-
 ### Git Bindings
 
 * `,gp` == git push
-
-### External Programs
-
-* (None Currently)
 
 ### Page Navigation
 
@@ -151,5 +129,4 @@
 
 * Anything in [here](https://github.com/kana/vim-textobj-user/wiki) worthwhile?
 * Look into [PHP Plugins](https://www.reddit.com/r/PHP/comments/23okor/vim_users_who_code_in_php_what_plugins_do_you_have/)
-
 
