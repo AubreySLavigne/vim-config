@@ -44,6 +44,17 @@
 
 TODO: Create a mapping for the above
 
+### Sessions
+
+* `:mksession <filename>.vim`
+* Reopen the file with `vim -S <filename.vim>`
+
+### Spellchecking
+
+* `:set spell`
+* `:set spelllang=en_us`
+* Can have multiple dictionaries per language
+
 ## Plugins
 
 ### Fzf
