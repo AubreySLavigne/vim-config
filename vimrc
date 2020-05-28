@@ -158,6 +158,7 @@ noremap ,pc :pc<CR>
 
 " }}}2
 " Vim: Complex Actions {{{2
+
 " Break this line at column 80, 120 {{{3
 nnoremap ,80 80\|Bik:s/\s*$//g<CR>j:noh<CR>
 nnoremap ,120 120\|T i k:s/\s*$//g<CR>j:noh<CR>

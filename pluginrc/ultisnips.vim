@@ -5,7 +5,7 @@ Plugin 'SirVer/ultisnips'
 " Config
 set runtimepath+=~/.ultisnips
 
-let g:UltiSnipsExpandTrigger='<Tab>'
+let g:UltiSnipsExpandTrigger='<c-x>'
 let g:UltiSnipsJumpForwardTrigger='<Tab>'
 let g:UltiSnipsJumpBackwardTrigger='<c-Z>'
 
