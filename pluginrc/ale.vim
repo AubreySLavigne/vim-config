@@ -24,15 +24,18 @@ let g:ale_linters = {
             \ 'bash':       ['shellcheck'],
             \ 'dockerfile': ['hadolint'],
             \ 'go':         ['gofmt', 'go build', 'golint', 'go vet', 'gopls'],
+            \ 'javascript': ['eslint'],
             \ 'php':        ['php', 'phpcs'],
             \ 'python':     ['pylint', 'pyls', 'mypy'],
-            \ 'terraform':  [ ],
+            \ 'terraform':  ['terraform_lsp'],
             \ 'vim':        ['vint'],
             \ }
 let g:ale_fixers = {
-            \ 'go':        ['gofmt', 'goimports'],
-            \ 'python':    ['isort'],
-            \ 'terraform': ['terraform'],
+            \ 'go':         ['gofmt', 'goimports'],
+            \ 'javascript': ['eslint', 'prettier'],
+            \ 'json':       ['jq'],
+            \ 'python':     ['isort'],
+            \ 'terraform':  ['terraform'],
             \ }
 
 
