@@ -71,9 +71,6 @@ Plugin 'VundleVim/Vundle.vim'
 source ~/.vim/pluginrc/ale.vim
 Plugin 'kshenoy/vim-signature'
 
-" Auto Complete
-Plugin 'zxqfl/tabnine-vim'
-
 " Text objects
 Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
@@ -89,7 +86,7 @@ source ~/.vim/pluginrc/fugitive.vim
 Plugin 'airblade/vim-gitgutter'
 
 " Snippets
-source ~/.vim/pluginrc/ultisnips.vim
+" source ~/.vim/pluginrc/ultisnips.vim
 
 " File/Buffer Navigation
 source ~/.vim/pluginrc/nerdtree.vim
