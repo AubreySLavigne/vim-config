@@ -11,6 +11,8 @@ set expandtab
 set autoindent
 silent! set nofixeol
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Highlighting {{{2
 filetype plugin indent on
 syntax on
@@ -21,8 +23,16 @@ set foldminlines=4
 setlocal foldmethod=marker      " This file only
 setlocal foldminlines=2      " This file only
 
-" Set filetype for Non-Standard Dockefiles (e.g. Dockerfile.bak)
+" Custom Filetypes {{{2
+
+" Set filetype for Non-Standard Dockefiles (e.g. Dockerfile.bak,
+" Dockerfile-testing)
 autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
+
+" Set filetype for template extensions
+" Dockerfile-testing)
+autocmd BufNewFile,BufRead *.yml.tpl set filetype=yaml
+autocmd BufNewFile,BufRead *.yaml.tpl set filetype=yaml
 
 " Numbering {{{2
 set number
@@ -115,6 +125,11 @@ filetype plugin indent on
 " vim-closetag config {{{2
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.xml,*.php'
 
+" vim-commentary {{{2
+
+" Add Terraform file support
+autocmd FileType tf setlocal commentstring=#\ %s
+
 " Google Go {{{2
 " Use goimports, rather than go-fmt
 let g:go_fmt_command = 'goimports'
@@ -178,10 +193,6 @@ nnoremap ,nu :set invnu<CR>
 " Run ctags in background
 nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
 
-" vim-commentary {{{3
-
-" Add Terraform file support
-autocmd FileType tf setlocal commentstring=#\ %s
 
 
 " }}}2
