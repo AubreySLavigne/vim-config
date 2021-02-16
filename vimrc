@@ -53,6 +53,7 @@ colorscheme desert
 
 highlight Search ctermbg=018
 highlight ALEWarning ctermbg=053
+highlight clear SignColumn
 
 " Shell Configuration {{{2
 if executable('zsh')
