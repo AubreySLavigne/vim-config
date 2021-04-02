@@ -65,6 +65,9 @@ endif
 " ctags Config{{{2
 :set tags=~/.vim/tags
 
+" Insert Mode Config {{{2
+set backspace=indent,eol,start
+
 " }}}1
 
 " Plugin Config {{{1
