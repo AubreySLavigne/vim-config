@@ -41,7 +41,11 @@ let g:ale_fixers = {
 
 "" Python Specific
 let g:ale_python_pylint_options = '--rcfile ' + $HOME + '.pylintrc' + "--init-hook='import sys; sys.path.append(\".\"); sys.path.append(\"+ $PYTHONPATH +\")'"
-let g:ale_python_pylint_executable = 'pylint3'
+if executable('pylint3')
+    let g:ale_python_pylint_executable = 'pylint3'
+else
+    let g:ale_python_pylint_executable = 'pylint'
+endif
 
 "" Go Specific
 let g:ale_go_go111module = 'on'
