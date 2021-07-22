@@ -100,7 +100,7 @@ source ~/.vim/pluginrc/fugitive.vim
 Plugin 'airblade/vim-gitgutter'
 
 " Snippets
-" source ~/.vim/pluginrc/ultisnips.vim
+source ~/.vim/pluginrc/ultisnips.vim
 
 " File/Buffer Navigation
 source ~/.vim/pluginrc/nerdtree.vim

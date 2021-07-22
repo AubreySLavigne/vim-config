@@ -4,3 +4,6 @@
 [submodule "bundle/Vundle.vim"]
 	path = bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim
+[submodule "UltiSnips"]
+	path = UltiSnips
+	url = git@github.com:AubreySLavigne/snippets.git
