@@ -3,17 +3,25 @@
 
 " Settings {{{1
 " Encoding/Whitespace Options {{{2
+
+" Encoding {{{3
 set encoding=utf-8
 scriptencoding utf-8
-set tabstop=4
-set shiftwidth=4
+
+" Configure Tabs {{{3
 set expandtab
 set autoindent
-silent! set nofixeol
+set tabstop=4
+set shiftwidth=4
 
 augroup yaml_style
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 augroup END
+
+" Don't modify newline at end of file
+silent! set nofixeol
+set nofixendofline
+set noendofline
 
 " Highlighting {{{2
 filetype plugin indent on
