@@ -32,7 +32,6 @@ let g:ale_linters = {
             \ }
 let g:ale_fixers = {
             \ 'go':         ['gofmt', 'goimports'],
-            \ 'javascript': ['eslint', 'prettier'],
             \ 'json':       ['jq'],
             \ 'python':     ['isort'],
             \ 'terraform':  ['terraform'],
