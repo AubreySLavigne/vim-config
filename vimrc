@@ -39,6 +39,7 @@ setlocal foldminlines=2      " This file only
 " Dockerfile-testing) {{{3
 augroup dockerfile_ext
     autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
+    autocmd BufNewFile,BufRead *-Dockerfile set filetype=dockerfile
 augroup END
 
 " Set filetype for template extensions
@@ -46,6 +47,9 @@ augroup END
 augroup yamlext
     autocmd BufNewFile,BufRead *.yml.tpl set filetype=yaml
     autocmd BufNewFile,BufRead *.yaml.tpl set filetype=yaml
+augroup END
+augroup hclext
+    autocmd BufNewFile,BufRead *.hcl.tpl set filetype=hcl
 augroup END
 
 " Numbering {{{2
