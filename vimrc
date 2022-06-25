@@ -36,13 +36,13 @@ setlocal foldminlines=2      " This file only
 " Custom Filetypes {{{2
 
 " Set filetype for Non-Standard Dockefiles (e.g. Dockerfile.bak,
-" Dockerfile-testing)
+" Dockerfile-testing) {{{3
 augroup dockerfile_ext
     autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
 augroup END
 
 " Set filetype for template extensions
-" Dockerfile-testing)
+" Dockerfile-testing) {{{3
 augroup yamlext
     autocmd BufNewFile,BufRead *.yml.tpl set filetype=yaml
     autocmd BufNewFile,BufRead *.yaml.tpl set filetype=yaml
@@ -212,8 +212,6 @@ nnoremap ,nu :set invnu<CR>
 
 " Run ctags in background
 nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
-
-
 
 " }}}2
 

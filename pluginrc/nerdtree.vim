@@ -16,5 +16,3 @@ nnoremap ,bo :NERDTreeFocus<CR>/--Bo<CR>/\c
 
 "" Set NERDTree DocRoot
 nnoremap ,nd :Bookmark DocRoot<CR>
-
-
