@@ -9,22 +9,25 @@
 
 ## At the command line
 
-* `vim +PluginInstall +qall` == Install Vundle Plugins
+| Command                    | Description            |
+|----------------------------|------------------------|
+| `vim +PluginInstall +qall` | Install Vundle Plugins |
 
 ## Built into VIM
 
 ### Useful Commands
 
-* `^^` (that is, `ctrl-^`) == Go to the previously opened file
-* `^e` and `^y` == Scroll the window down and up
-* `g^a` == Visual mode - Create an Incrementing list of numbers (0\n0\n0 to 1\n2\n3)
-* `"*dd` == Cut Command into Clipboard Register
-* `"*p` == Paste Command into Clipboard Register
-* `gi` == resume inserting where you were last editing
-* `^r^rs` == insert the content of the 's' register
-* `^r0` (zero) == reload current file -- good for reloading vimrc changes
-* `:earlier 2m` ==  Go back two minutes (mind blown)
-* `c^w_` == set size of horizontal split
+Reminder: `^x` is shorthand for `ctrl-x`
+
+| Command       | Description                                                               |
+|---------------|---------------------------------------------------------------------------|
+| `^e` and `^y` | Scroll the window down and up                                             |
+| `g^a`         | Visual mode - Create an Incrementing list of numbers (0\n0\n0 to 1\n2\n3) |
+| `"*dd`        | Cut Command into Clipboard Register                                       |
+| `"*p`         | Paste Command into Clipboard Register                                     |
+| `^r^rs`       | insert the content of the 's' register                                    |
+| `^r0` (zero)  | reload current file -- good for reloading vimrc changes                   |
+| `c^w_`        | set size of horizontal split                                              |
 
 ### Folding
 
@@ -88,58 +91,78 @@ TODO: Create a mapping for the above
 
 ## NERDTree
 
-* `I` (in NERDTree) == Display hidden files
-* `o` (in NERDTree) == Opens selected dir/file
-* `cd` (in NERDTree) == Current Directory is the NEW pwd
-* `CD` (in NERDTree) == Changes the current directory to Current Directory
-* `r` (in NERDTree) == Refresh Current Dir
-* `t` (in NERDTree) == Open selected file in new tab
+These commands are run while in the NERDTree buffer
+
+| Command | Description                                        |
+|---------|----------------------------------------------------|
+| `I`     | Display hidden files                               |
+| `o`     | Opens selected dir/file                            |
+| `cd`    | Current Directory is the NEW pwd                   |
+| `CD`    | Changes the current directory to Current Directory |
+| `r`     | Refresh Current Dir                                |
+| `t`     | Open selected file in new tab                      |
 
 ## NERDTree Tabs
 
-* `:NERDTreeTabsOpen` == Switchs NERDTree on for all tabs
-* `:NERDTreeTabsClose` == Switchs NERDTree off for all tabs
+| Command              | Description                        |
+|----------------------|------------------------------------|
+| `:NERDTreeTabsOpen`  | Switches NERDTree on for all tabs  |
+| `:NERDTreeTabsClose` | Switches NERDTree off for all tabs |
 
 ## vim-fugitive
 
-* `:Gstatus` == `git status`
-* `:Glog` == `git log` for file in buffer
+| Command       | Description                  |
+|---------------|------------------------------|
+| `:Git status` | `git status`                 |
+| `:Git log`    | `git log` for file in buffer |
 
 ## vim-textobj-space
 
-* `iS` == any mixed spaces
+| Command | Description      |
+|---------|------------------|
+| `iS`    | any mixed spaces |
 
 ## vim-gitgutter
 
-* `ic` and `ac` == Text Objects for selected Change
+| Command       | Description                      |
+|---------------|----------------------------------|
+| `ic` and `ac` | Text Objects for selected Change |
 
 ## Mappings
 
 ### Load Files
 
-* `,bo` == Navigate to NERDTree and start searching for bookmark
-* `,nd` == Set NERDTree DocRoot bookmark
+| Command | Description                                           |
+|---------|-------------------------------------------------------|
+| `,bo`   | Navigate to NERDTree and start searching for bookmark |
+| `,nd`   | Set NERDTree DocRoot bookmark                         |
 
 ### Git Bindings
 
-* `,gp` == git push
+| Command | Description |
+|---------|-------------|
+| `,gp`   | git push    |
 
 ### Page Navigation
 
-* `,mark` == Set up Marks for Merging Conflicts
-* `,delm` == Delete marks as set in `,mark`
-* `,woq` == Go to next index without quotes ('WithOut Quotes')
-* `,[` == Go to next {PLACEHOLDER}
-* `,ff` == Go to next linux-style filepath
+| Command | Description                                        |
+|---------|----------------------------------------------------|
+| `,mark` | Set up Marks for Merging Conflicts                 |
+| `,delm` | Delete marks as set in `,mark`                     |
+| `,woq`  | Go to next index without quotes ('WithOut Quotes') |
+| `,[`    | Go to next {PLACEHOLDER}                           |
+| `,ff`   | Go to next linux-style filepath                    |
 
 ### Misc Text Manipulations
 
-* `,aub` == Insert my name
-* `,120` == Take the current line and break at 120
-* `,pb` == Paste and Insert to prepend
-* `,sw` == Swap two items in a tuple
-* `,o` and `,O` == Add a blank line above/below
-* `,k` and `,K` == Toggle Checkbox ([ ]) in Markdown file
+| Command       | Description                            |
+|---------------|----------------------------------------|
+| `,aub`        | Insert my name                         |
+| `,120`        | Take the current line and break at 120 |
+| `,pb`         | Paste and Insert to prepend            |
+| `,sw`         | Swap two items in a tuple              |
+| `,o` and `,O` | Add a blank line above/below           |
+| `,k` and `,K` | Toggle Checkbox ([ ]) in Markdown file |
 
 ## Notes and Wishlist
 
