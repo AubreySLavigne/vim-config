@@ -28,10 +28,35 @@
 
 ### Folding
 
-* `zF` == create fold
-* `zc` == close current fold
-* `zd` == delete fold at the cursor
-* `:{range}fo` == create fold for range
+#### Open/Close Folds
+
+My configs use `<Space>` for toggling folds at the cursor
+
+| Command | Description                    |
+|---------|--------------------------------|
+| `zo`    | opens a fold at the cursor     |
+| `zO`    | opens all folds at the cursor  |
+| `zm`    | increases the foldlevel by one |
+| `zM`    | closes all open folds          |
+| `zr`    | decreases the foldlevel by one |
+
+#### Navigating between Folding
+
+| Command | Description                           |
+|---------|---------------------------------------|
+| `zj`    | moves the cursor to the next fold     |
+| `zk`    | moves the cursor to the previous fold |
+| `[z`    | move to start of open fold            |
+| `]z`    | move to end of open fold              |
+
+#### Create/Delete Folds
+
+| Command     | Description                                 |
+|-------------|---------------------------------------------|
+| `zf#j`      | creates a fold from the cursor down # lines |
+| `zf/string` | creates a fold from the cursor to string    |
+| `zd`        | deletes the fold at the cursor              |
+| `zE`        | deletes all folds                           |
 
 ### Disable Indenting
 
