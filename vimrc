@@ -220,6 +220,10 @@ nnoremap ,ct :! cd $APPLICATION_DIR/ && ctags -R &>/dev/null &<CR>
 " }}}2
 
 " External Programs {{{2
+" jq {{{3
+
+vnoremap <leader>jq :'<,'>! jq .<CR>
+
 " Python {{{3
 
 nnoremap !py :terminal<CR>python3<CR>
