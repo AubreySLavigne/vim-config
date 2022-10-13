@@ -67,6 +67,12 @@ set noswapfile
 " Color Settings {{{2
 set t_Co=256
 
+" Vim9 changes how colorschemes interact with transparent backgrounds
+" This fix was found here: https://github.com/vim/vim/issues/10449
+augroup transparent_bg | au!
+    au Colorscheme * hi Normal ctermbg=NONE
+augroup END
+
 colorscheme desert
 
 highlight Search ctermbg=018

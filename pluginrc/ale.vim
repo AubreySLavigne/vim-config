@@ -48,3 +48,7 @@ endif
 
 "" Go Specific
 let g:ale_go_go111module = 'on'
+
+"" Dockerfile Specific
+" let g:ale_dockerfile_hadolint_options = '--format tty'
+let g:ale_dockerfile_hadolint_options = ''
