@@ -30,6 +30,7 @@ Reminder: `^x` is shorthand for `ctrl-x`
 | `^r^rs`       | insert the content of the 's' register                                    |
 | `^r0` (zero)  | reload current file -- good for reloading vimrc changes                   |
 | `c^w_`        | set size of horizontal split                                              |
+| `^w+`, `^w-`  | Resize horizontal split                                                   |
 
 ### Folding
 
