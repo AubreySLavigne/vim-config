@@ -3,9 +3,11 @@
 
 ## Tips
 
-* Never do in two keystrokes what you can do in 1. (Intolerance of Typing)
-* Build fail safes for common typos (Intolerance of Typos)
-* Commands should focus on repeatability
+| Principle                 | Description                                     |
+|---------------------------|-------------------------------------------------|
+| Intolerance of Typing     | Never do in two keystrokes what you can do in 1 |
+| Intolerance of Typos      | Build fail safes for common typos               |
+| Intolerance of Repetition | Build commands that can be reproduced easily    |
 
 ## At the command line
 
